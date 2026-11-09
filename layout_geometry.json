@@ -1,0 +1,2898 @@
+{
+  "schema_version": "1.0",
+  "project": "Luxury Bathroom / Contest 2798513",
+  "status": "COORDINATE CONCEPT \u2014 COORDINATION HOLDS",
+  "units": {
+    "model": "inch",
+    "inch_to_cm": 2.54,
+    "inch_to_mm": 25.4,
+    "ft3_to_l": 28.316846592
+  },
+  "origin": "Main rectangle south-west corner; +X east, +Y north, +Z up",
+  "design_read": "Architectural competition drawing on white paper, thin black frame, bottom title strip; warm stone / walnut; shared-coordinate axonometric.",
+  "source_policy": "Latest user coordinates govern geometry. Original sketches and video are contextual evidence, not a dimensioned as-built survey.",
+  "sources": [
+    "brief/20261001_165502.jpg",
+    "brief/20261001_171608.jpg",
+    "brief/bathroom_walkthrough_compressed.mp4",
+    "brief/contest_meta.json",
+    "user coordinate schedule 2026-11-10"
+  ],
+  "footprint": {
+    "polygon_in": [
+      [
+        0,
+        0
+      ],
+      [
+        150,
+        0
+      ],
+      [
+        150,
+        200
+      ],
+      [
+        -50,
+        200
+      ],
+      [
+        -50,
+        100
+      ],
+      [
+        0,
+        100
+      ]
+    ],
+    "polygon_cm": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        381.0,
+        0.0
+      ],
+      [
+        381.0,
+        508.0
+      ],
+      [
+        -127.0,
+        508.0
+      ],
+      [
+        -127.0,
+        254.0
+      ],
+      [
+        0.0,
+        254.0
+      ]
+    ],
+    "area_in2": 35000,
+    "area_ft2": 243.05555555555554,
+    "area_m2": 22.5806
+  },
+  "assumptions": {
+    "ceiling_height_in": 96,
+    "door_head_in": 84,
+    "window_sill_in": 42,
+    "window_head_in": 90,
+    "external_wall_display_thickness_in": 4,
+    "partition_display_thickness_in": 2,
+    "wall_thickness_status": "diagrammatic only"
+  },
+  "zones": [
+    {
+      "id": "MAIN",
+      "name": "Main rectangle",
+      "bounds_in": [
+        0,
+        0,
+        150,
+        200
+      ],
+      "bounds_cm": [
+        0.0,
+        0.0,
+        381.0,
+        508.0
+      ],
+      "polygon_in": [
+        [
+          0,
+          0
+        ],
+        [
+          150,
+          0
+        ],
+        [
+          150,
+          200
+        ],
+        [
+          0,
+          200
+        ]
+      ],
+      "dimensions_in": [
+        150,
+        200,
+        0
+      ],
+      "dimensions_cm": [
+        381.0,
+        508.0,
+        0.0
+      ],
+      "z_in": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "WING",
+      "name": "West extension",
+      "bounds_in": [
+        -50,
+        100,
+        0,
+        200
+      ],
+      "bounds_cm": [
+        -127.0,
+        254.0,
+        0.0,
+        508.0
+      ],
+      "polygon_in": [
+        [
+          -50,
+          100
+        ],
+        [
+          0,
+          100
+        ],
+        [
+          0,
+          200
+        ],
+        [
+          -50,
+          200
+        ]
+      ],
+      "dimensions_in": [
+        50,
+        100,
+        0
+      ],
+      "dimensions_cm": [
+        127.0,
+        254.0,
+        0.0
+      ],
+      "z_in": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "WC",
+      "name": "Private water closet",
+      "bounds_in": [
+        100,
+        140,
+        150,
+        200
+      ],
+      "bounds_cm": [
+        254.0,
+        355.6,
+        381.0,
+        508.0
+      ],
+      "polygon_in": [
+        [
+          100,
+          140
+        ],
+        [
+          150,
+          140
+        ],
+        [
+          150,
+          200
+        ],
+        [
+          100,
+          200
+        ]
+      ],
+      "dimensions_in": [
+        50,
+        60,
+        0
+      ],
+      "dimensions_cm": [
+        127.0,
+        152.4,
+        0.0
+      ],
+      "z_in": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "TUB-ZONE",
+      "name": "Tub alcove",
+      "bounds_in": [
+        0,
+        148,
+        100,
+        200
+      ],
+      "bounds_cm": [
+        0.0,
+        375.92,
+        254.0,
+        508.0
+      ],
+      "polygon_in": [
+        [
+          0,
+          148
+        ],
+        [
+          100,
+          148
+        ],
+        [
+          100,
+          200
+        ],
+        [
+          0,
+          200
+        ]
+      ],
+      "dimensions_in": [
+        100,
+        52,
+        0
+      ],
+      "dimensions_cm": [
+        254.0,
+        132.08,
+        0.0
+      ],
+      "z_in": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "SKY",
+      "name": "Existing skylight projection",
+      "bounds_in": [
+        25,
+        125,
+        95,
+        175
+      ],
+      "bounds_cm": [
+        63.5,
+        317.5,
+        241.3,
+        444.5
+      ],
+      "polygon_in": [
+        [
+          25,
+          125
+        ],
+        [
+          95,
+          125
+        ],
+        [
+          95,
+          175
+        ],
+        [
+          25,
+          175
+        ]
+      ],
+      "dimensions_in": [
+        70,
+        50,
+        0
+      ],
+      "dimensions_cm": [
+        177.8,
+        127.0,
+        0.0
+      ],
+      "z_in": [
+        96,
+        96
+      ],
+      "status": "user-coordinate; height assumed"
+    },
+    {
+      "id": "CIRC-REQUEST",
+      "name": "Requested circulation rectangle",
+      "bounds_in": [
+        24,
+        10,
+        126,
+        148
+      ],
+      "bounds_cm": [
+        60.96,
+        25.4,
+        320.04,
+        375.92
+      ],
+      "polygon_in": [
+        [
+          24,
+          10
+        ],
+        [
+          126,
+          10
+        ],
+        [
+          126,
+          148
+        ],
+        [
+          24,
+          148
+        ]
+      ],
+      "dimensions_in": [
+        102,
+        138,
+        0
+      ],
+      "dimensions_cm": [
+        259.08,
+        350.52,
+        0.0
+      ],
+      "z_in": [
+        0,
+        0
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "S-01A",
+      "name": "Linen / tall cosmetics",
+      "bounds_in": [
+        126,
+        6,
+        150,
+        24
+      ],
+      "bounds_cm": [
+        320.04,
+        15.24,
+        381.0,
+        60.96
+      ],
+      "polygon_in": [
+        [
+          126,
+          6
+        ],
+        [
+          150,
+          6
+        ],
+        [
+          150,
+          24
+        ],
+        [
+          126,
+          24
+        ]
+      ],
+      "dimensions_in": [
+        24,
+        18,
+        96
+      ],
+      "dimensions_cm": [
+        60.96,
+        45.72,
+        243.84
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "kind": "cabinet",
+      "group": "S-01",
+      "z_cm": [
+        0.0,
+        243.84
+      ],
+      "dimensions_feet_inches": [
+        "2 ft 0 in",
+        "1 ft 6 in",
+        "8 ft 0 in"
+      ]
+    },
+    {
+      "id": "V-01",
+      "name": "South basin drawer base",
+      "bounds_in": [
+        126,
+        24,
+        150,
+        60
+      ],
+      "bounds_cm": [
+        320.04,
+        60.96,
+        381.0,
+        152.4
+      ],
+      "polygon_in": [
+        [
+          126,
+          24
+        ],
+        [
+          150,
+          24
+        ],
+        [
+          150,
+          60
+        ],
+        [
+          126,
+          60
+        ]
+      ],
+      "dimensions_in": [
+        24,
+        36,
+        28.5
+      ],
+      "dimensions_cm": [
+        60.96,
+        91.44,
+        72.39
+      ],
+      "z_in": [
+        6,
+        34.5
+      ],
+      "kind": "base",
+      "group": "S-01",
+      "z_cm": [
+        15.24,
+        87.63
+      ],
+      "dimensions_feet_inches": [
+        "2 ft 0 in",
+        "3 ft 0 in",
+        "2 ft 4.5 in"
+      ]
+    },
+    {
+      "id": "V-02",
+      "name": "North basin drawer base",
+      "bounds_in": [
+        126,
+        86,
+        150,
+        122
+      ],
+      "bounds_cm": [
+        320.04,
+        218.44,
+        381.0,
+        309.88
+      ],
+      "polygon_in": [
+        [
+          126,
+          86
+        ],
+        [
+          150,
+          86
+        ],
+        [
+          150,
+          122
+        ],
+        [
+          126,
+          122
+        ]
+      ],
+      "dimensions_in": [
+        24,
+        36,
+        28.5
+      ],
+      "dimensions_cm": [
+        60.96,
+        91.44,
+        72.39
+      ],
+      "z_in": [
+        6,
+        34.5
+      ],
+      "kind": "base",
+      "group": "S-01",
+      "z_cm": [
+        15.24,
+        87.63
+      ],
+      "dimensions_feet_inches": [
+        "2 ft 0 in",
+        "3 ft 0 in",
+        "2 ft 4.5 in"
+      ]
+    },
+    {
+      "id": "COUNTER",
+      "name": "Honed stone counter",
+      "bounds_in": [
+        126,
+        24,
+        150,
+        122
+      ],
+      "bounds_cm": [
+        320.04,
+        60.96,
+        381.0,
+        309.88
+      ],
+      "polygon_in": [
+        [
+          126,
+          24
+        ],
+        [
+          150,
+          24
+        ],
+        [
+          150,
+          122
+        ],
+        [
+          126,
+          122
+        ]
+      ],
+      "dimensions_in": [
+        24,
+        98,
+        1.5
+      ],
+      "dimensions_cm": [
+        60.96,
+        248.92,
+        3.81
+      ],
+      "z_in": [
+        34.5,
+        36
+      ],
+      "kind": "stone",
+      "z_cm": [
+        87.63,
+        91.44
+      ],
+      "dimensions_feet_inches": [
+        "2 ft 0 in",
+        "8 ft 2 in",
+        "0 ft 1.5 in"
+      ]
+    },
+    {
+      "id": "S-01B",
+      "name": "Powered grooming tower",
+      "bounds_in": [
+        136,
+        60,
+        150,
+        86
+      ],
+      "bounds_cm": [
+        345.44,
+        152.4,
+        381.0,
+        218.44
+      ],
+      "polygon_in": [
+        [
+          136,
+          60
+        ],
+        [
+          150,
+          60
+        ],
+        [
+          150,
+          86
+        ],
+        [
+          136,
+          86
+        ]
+      ],
+      "dimensions_in": [
+        14,
+        26,
+        60
+      ],
+      "dimensions_cm": [
+        35.56,
+        66.04,
+        152.4
+      ],
+      "z_in": [
+        36,
+        96
+      ],
+      "kind": "cabinet",
+      "group": "S-01",
+      "z_cm": [
+        91.44,
+        243.84
+      ],
+      "dimensions_feet_inches": [
+        "1 ft 2 in",
+        "2 ft 2 in",
+        "5 ft 0 in"
+      ]
+    },
+    {
+      "id": "S-01C",
+      "name": "Daily towel / skincare",
+      "bounds_in": [
+        126,
+        122,
+        150,
+        140
+      ],
+      "bounds_cm": [
+        320.04,
+        309.88,
+        381.0,
+        355.6
+      ],
+      "polygon_in": [
+        [
+          126,
+          122
+        ],
+        [
+          150,
+          122
+        ],
+        [
+          150,
+          140
+        ],
+        [
+          126,
+          140
+        ]
+      ],
+      "dimensions_in": [
+        24,
+        18,
+        96
+      ],
+      "dimensions_cm": [
+        60.96,
+        45.72,
+        243.84
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "kind": "cabinet",
+      "group": "S-01",
+      "z_cm": [
+        0.0,
+        243.84
+      ],
+      "dimensions_feet_inches": [
+        "2 ft 0 in",
+        "1 ft 6 in",
+        "8 ft 0 in"
+      ]
+    },
+    {
+      "id": "STOOL",
+      "name": "Pull-out seated stool",
+      "bounds_in": [
+        130,
+        64,
+        145,
+        82
+      ],
+      "bounds_cm": [
+        330.2,
+        162.56,
+        368.3,
+        208.28
+      ],
+      "polygon_in": [
+        [
+          130,
+          64
+        ],
+        [
+          145,
+          64
+        ],
+        [
+          145,
+          82
+        ],
+        [
+          130,
+          82
+        ]
+      ],
+      "dimensions_in": [
+        15,
+        18,
+        20
+      ],
+      "dimensions_cm": [
+        38.1,
+        45.72,
+        50.8
+      ],
+      "z_in": [
+        0,
+        20
+      ],
+      "kind": "stool",
+      "z_cm": [
+        0.0,
+        50.8
+      ],
+      "dimensions_feet_inches": [
+        "1 ft 3 in",
+        "1 ft 6 in",
+        "1 ft 8 in"
+      ]
+    },
+    {
+      "id": "S-02A",
+      "name": "Linen / hampers / utility",
+      "bounds_in": [
+        0,
+        4,
+        24,
+        52
+      ],
+      "bounds_cm": [
+        0.0,
+        10.16,
+        60.96,
+        132.08
+      ],
+      "polygon_in": [
+        [
+          0,
+          4
+        ],
+        [
+          24,
+          4
+        ],
+        [
+          24,
+          52
+        ],
+        [
+          0,
+          52
+        ]
+      ],
+      "dimensions_in": [
+        24,
+        48,
+        96
+      ],
+      "dimensions_cm": [
+        60.96,
+        121.92,
+        243.84
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "kind": "cabinet",
+      "group": "S-02",
+      "z_cm": [
+        0.0,
+        243.84
+      ],
+      "dimensions_feet_inches": [
+        "2 ft 0 in",
+        "4 ft 0 in",
+        "8 ft 0 in"
+      ]
+    },
+    {
+      "id": "S-02B",
+      "name": "Robe / spa drawers",
+      "bounds_in": [
+        0,
+        84,
+        20,
+        100
+      ],
+      "bounds_cm": [
+        0.0,
+        213.36,
+        50.8,
+        254.0
+      ],
+      "polygon_in": [
+        [
+          0,
+          84
+        ],
+        [
+          20,
+          84
+        ],
+        [
+          20,
+          100
+        ],
+        [
+          0,
+          100
+        ]
+      ],
+      "dimensions_in": [
+        20,
+        16,
+        96
+      ],
+      "dimensions_cm": [
+        50.8,
+        40.64,
+        243.84
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "kind": "cabinet",
+      "group": "S-02",
+      "z_cm": [
+        0.0,
+        243.84
+      ],
+      "dimensions_feet_inches": [
+        "1 ft 8 in",
+        "1 ft 4 in",
+        "8 ft 0 in"
+      ]
+    },
+    {
+      "id": "S-03",
+      "name": "Heated towel / robe cabinet",
+      "bounds_in": [
+        -22,
+        168,
+        0,
+        184
+      ],
+      "bounds_cm": [
+        -55.88,
+        426.72,
+        0.0,
+        467.36
+      ],
+      "polygon_in": [
+        [
+          -22,
+          168
+        ],
+        [
+          0,
+          168
+        ],
+        [
+          0,
+          184
+        ],
+        [
+          -22,
+          184
+        ]
+      ],
+      "dimensions_in": [
+        22,
+        16,
+        84
+      ],
+      "dimensions_cm": [
+        55.88,
+        40.64,
+        213.36
+      ],
+      "z_in": [
+        0,
+        84
+      ],
+      "kind": "cabinet",
+      "group": "S-03",
+      "option": "A",
+      "z_cm": [
+        0.0,
+        213.36
+      ],
+      "dimensions_feet_inches": [
+        "1 ft 10 in",
+        "1 ft 4 in",
+        "7 ft 0 in"
+      ]
+    },
+    {
+      "id": "S-04",
+      "name": "Over-cistern storage",
+      "bounds_in": [
+        102,
+        190,
+        148,
+        200
+      ],
+      "bounds_cm": [
+        259.08,
+        482.6,
+        375.92,
+        508.0
+      ],
+      "polygon_in": [
+        [
+          102,
+          190
+        ],
+        [
+          148,
+          190
+        ],
+        [
+          148,
+          200
+        ],
+        [
+          102,
+          200
+        ]
+      ],
+      "dimensions_in": [
+        46,
+        10,
+        42
+      ],
+      "dimensions_cm": [
+        116.84,
+        25.4,
+        106.68
+      ],
+      "z_in": [
+        48,
+        90
+      ],
+      "kind": "cabinet",
+      "group": "S-04",
+      "z_cm": [
+        121.92,
+        228.6
+      ],
+      "dimensions_feet_inches": [
+        "3 ft 10 in",
+        "0 ft 10 in",
+        "3 ft 6 in"
+      ]
+    },
+    {
+      "id": "TUB",
+      "name": "Freestanding soaking tub",
+      "bounds_in": [
+        16,
+        160,
+        84,
+        192
+      ],
+      "bounds_cm": [
+        40.64,
+        406.4,
+        213.36,
+        487.68
+      ],
+      "polygon_in": [
+        [
+          16,
+          160
+        ],
+        [
+          84,
+          160
+        ],
+        [
+          84,
+          192
+        ],
+        [
+          16,
+          192
+        ]
+      ],
+      "dimensions_in": [
+        68,
+        32,
+        24
+      ],
+      "dimensions_cm": [
+        172.72,
+        81.28,
+        60.96
+      ],
+      "z_in": [
+        0,
+        24
+      ],
+      "kind": "tub",
+      "z_cm": [
+        0.0,
+        60.96
+      ],
+      "dimensions_feet_inches": [
+        "5 ft 8 in",
+        "2 ft 8 in",
+        "2 ft 0 in"
+      ]
+    },
+    {
+      "id": "LEDGE",
+      "name": "North stone display ledge",
+      "bounds_in": [
+        0,
+        192,
+        100,
+        200
+      ],
+      "bounds_cm": [
+        0.0,
+        487.68,
+        254.0,
+        508.0
+      ],
+      "polygon_in": [
+        [
+          0,
+          192
+        ],
+        [
+          100,
+          192
+        ],
+        [
+          100,
+          200
+        ],
+        [
+          0,
+          200
+        ]
+      ],
+      "dimensions_in": [
+        100,
+        8,
+        2
+      ],
+      "dimensions_cm": [
+        254.0,
+        20.32,
+        5.08
+      ],
+      "z_in": [
+        28,
+        30
+      ],
+      "kind": "stone",
+      "z_cm": [
+        71.12,
+        76.2
+      ],
+      "dimensions_feet_inches": [
+        "8 ft 4 in",
+        "0 ft 8 in",
+        "0 ft 2 in"
+      ]
+    },
+    {
+      "id": "WC-PAN",
+      "name": "Wall-hung WC indicative envelope",
+      "bounds_in": [
+        116,
+        162,
+        134,
+        190
+      ],
+      "bounds_cm": [
+        294.64,
+        411.48,
+        340.36,
+        482.6
+      ],
+      "polygon_in": [
+        [
+          116,
+          162
+        ],
+        [
+          134,
+          162
+        ],
+        [
+          134,
+          190
+        ],
+        [
+          116,
+          190
+        ]
+      ],
+      "dimensions_in": [
+        18,
+        28,
+        10
+      ],
+      "dimensions_cm": [
+        45.72,
+        71.12,
+        25.4
+      ],
+      "z_in": [
+        8,
+        18
+      ],
+      "kind": "toilet",
+      "stack_in": [
+        125,
+        182
+      ],
+      "z_cm": [
+        20.32,
+        45.72
+      ],
+      "dimensions_feet_inches": [
+        "1 ft 6 in",
+        "2 ft 4 in",
+        "0 ft 10 in"
+      ]
+    },
+    {
+      "id": "RINSE",
+      "name": "Hand rinse basin",
+      "bounds_in": [
+        140,
+        146,
+        150,
+        162
+      ],
+      "bounds_cm": [
+        355.6,
+        370.84,
+        381.0,
+        411.48
+      ],
+      "polygon_in": [
+        [
+          140,
+          146
+        ],
+        [
+          150,
+          146
+        ],
+        [
+          150,
+          162
+        ],
+        [
+          140,
+          162
+        ]
+      ],
+      "dimensions_in": [
+        10,
+        16,
+        2
+      ],
+      "dimensions_cm": [
+        25.4,
+        40.64,
+        5.08
+      ],
+      "z_in": [
+        32,
+        34
+      ],
+      "kind": "basin",
+      "z_cm": [
+        81.28,
+        86.36
+      ],
+      "dimensions_feet_inches": [
+        "0 ft 10 in",
+        "1 ft 4 in",
+        "0 ft 2 in"
+      ]
+    },
+    {
+      "id": "BASIN-1",
+      "name": "South undermount basin",
+      "bounds_in": [
+        131,
+        31,
+        146,
+        53
+      ],
+      "bounds_cm": [
+        332.74,
+        78.74,
+        370.84,
+        134.62
+      ],
+      "polygon_in": [
+        [
+          131,
+          31
+        ],
+        [
+          146,
+          31
+        ],
+        [
+          146,
+          53
+        ],
+        [
+          131,
+          53
+        ]
+      ],
+      "dimensions_in": [
+        15,
+        22,
+        3
+      ],
+      "dimensions_cm": [
+        38.1,
+        55.88,
+        7.62
+      ],
+      "z_in": [
+        33,
+        36
+      ],
+      "kind": "basin",
+      "z_cm": [
+        83.82,
+        91.44
+      ],
+      "dimensions_feet_inches": [
+        "1 ft 3 in",
+        "1 ft 10 in",
+        "0 ft 3 in"
+      ]
+    },
+    {
+      "id": "BASIN-2",
+      "name": "North undermount basin",
+      "bounds_in": [
+        131,
+        93,
+        146,
+        115
+      ],
+      "bounds_cm": [
+        332.74,
+        236.22,
+        370.84,
+        292.1
+      ],
+      "polygon_in": [
+        [
+          131,
+          93
+        ],
+        [
+          146,
+          93
+        ],
+        [
+          146,
+          115
+        ],
+        [
+          131,
+          115
+        ]
+      ],
+      "dimensions_in": [
+        15,
+        22,
+        3
+      ],
+      "dimensions_cm": [
+        38.1,
+        55.88,
+        7.62
+      ],
+      "z_in": [
+        33,
+        36
+      ],
+      "kind": "basin",
+      "z_cm": [
+        83.82,
+        91.44
+      ],
+      "dimensions_feet_inches": [
+        "1 ft 3 in",
+        "1 ft 10 in",
+        "0 ft 3 in"
+      ]
+    },
+    {
+      "id": "MIRROR-1",
+      "name": "Recessed south mirror",
+      "bounds_in": [
+        149,
+        26,
+        150,
+        58
+      ],
+      "bounds_cm": [
+        378.46,
+        66.04,
+        381.0,
+        147.32
+      ],
+      "polygon_in": [
+        [
+          149,
+          26
+        ],
+        [
+          150,
+          26
+        ],
+        [
+          150,
+          58
+        ],
+        [
+          149,
+          58
+        ]
+      ],
+      "dimensions_in": [
+        1,
+        32,
+        48
+      ],
+      "dimensions_cm": [
+        2.54,
+        81.28,
+        121.92
+      ],
+      "z_in": [
+        42,
+        90
+      ],
+      "kind": "mirror",
+      "z_cm": [
+        106.68,
+        228.6
+      ],
+      "dimensions_feet_inches": [
+        "0 ft 1 in",
+        "2 ft 8 in",
+        "4 ft 0 in"
+      ]
+    },
+    {
+      "id": "MIRROR-2",
+      "name": "Recessed north mirror",
+      "bounds_in": [
+        149,
+        88,
+        150,
+        120
+      ],
+      "bounds_cm": [
+        378.46,
+        223.52,
+        381.0,
+        304.8
+      ],
+      "polygon_in": [
+        [
+          149,
+          88
+        ],
+        [
+          150,
+          88
+        ],
+        [
+          150,
+          120
+        ],
+        [
+          149,
+          120
+        ]
+      ],
+      "dimensions_in": [
+        1,
+        32,
+        48
+      ],
+      "dimensions_cm": [
+        2.54,
+        81.28,
+        121.92
+      ],
+      "z_in": [
+        42,
+        90
+      ],
+      "kind": "mirror",
+      "z_cm": [
+        106.68,
+        228.6
+      ],
+      "dimensions_feet_inches": [
+        "0 ft 1 in",
+        "2 ft 8 in",
+        "4 ft 0 in"
+      ]
+    },
+    {
+      "id": "BENCH-A",
+      "name": "Heated stone bench",
+      "bounds_in": [
+        -50,
+        100,
+        0,
+        118
+      ],
+      "bounds_cm": [
+        -127.0,
+        254.0,
+        0.0,
+        299.72
+      ],
+      "polygon_in": [
+        [
+          -50,
+          100
+        ],
+        [
+          0,
+          100
+        ],
+        [
+          0,
+          118
+        ],
+        [
+          -50,
+          118
+        ]
+      ],
+      "dimensions_in": [
+        50,
+        18,
+        18
+      ],
+      "dimensions_cm": [
+        127.0,
+        45.72,
+        45.72
+      ],
+      "z_in": [
+        0,
+        18
+      ],
+      "kind": "stone",
+      "option": "A",
+      "z_cm": [
+        0.0,
+        45.72
+      ],
+      "dimensions_feet_inches": [
+        "4 ft 2 in",
+        "1 ft 6 in",
+        "1 ft 6 in"
+      ]
+    },
+    {
+      "id": "M-01",
+      "name": "Tankless utility chase",
+      "bounds_in": [
+        -50,
+        184,
+        0,
+        200
+      ],
+      "bounds_cm": [
+        -127.0,
+        467.36,
+        0.0,
+        508.0
+      ],
+      "polygon_in": [
+        [
+          -50,
+          184
+        ],
+        [
+          0,
+          184
+        ],
+        [
+          0,
+          200
+        ],
+        [
+          -50,
+          200
+        ]
+      ],
+      "dimensions_in": [
+        50,
+        16,
+        96
+      ],
+      "dimensions_cm": [
+        127.0,
+        40.64,
+        243.84
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "kind": "mechanical",
+      "option": "A",
+      "z_cm": [
+        0.0,
+        243.84
+      ],
+      "dimensions_feet_inches": [
+        "4 ft 2 in",
+        "1 ft 4 in",
+        "8 ft 0 in"
+      ]
+    },
+    {
+      "id": "SHOWER-A",
+      "name": "Rain / steam shower zone",
+      "bounds_in": [
+        -50,
+        100,
+        0,
+        184
+      ],
+      "bounds_cm": [
+        -127.0,
+        254.0,
+        0.0,
+        467.36
+      ],
+      "polygon_in": [
+        [
+          -50,
+          100
+        ],
+        [
+          0,
+          100
+        ],
+        [
+          0,
+          184
+        ],
+        [
+          -50,
+          184
+        ]
+      ],
+      "dimensions_in": [
+        50,
+        84,
+        0
+      ],
+      "dimensions_cm": [
+        127.0,
+        213.36,
+        0.0
+      ],
+      "z_in": [
+        0,
+        0
+      ],
+      "kind": "zone",
+      "option": "A",
+      "z_cm": [
+        0.0,
+        0.0
+      ],
+      "dimensions_feet_inches": [
+        "4 ft 2 in",
+        "7 ft 0 in",
+        "0 ft 0 in"
+      ]
+    },
+    {
+      "id": "M-EXIST",
+      "name": "Retained tank mechanical closet",
+      "bounds_in": [
+        -50,
+        160,
+        0,
+        200
+      ],
+      "bounds_cm": [
+        -127.0,
+        406.4,
+        0.0,
+        508.0
+      ],
+      "polygon_in": [
+        [
+          -50,
+          160
+        ],
+        [
+          0,
+          160
+        ],
+        [
+          0,
+          200
+        ],
+        [
+          -50,
+          200
+        ]
+      ],
+      "dimensions_in": [
+        50,
+        40,
+        96
+      ],
+      "dimensions_cm": [
+        127.0,
+        101.6,
+        243.84
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "kind": "mechanical",
+      "option": "B",
+      "z_cm": [
+        0.0,
+        243.84
+      ],
+      "dimensions_feet_inches": [
+        "4 ft 2 in",
+        "3 ft 4 in",
+        "8 ft 0 in"
+      ]
+    },
+    {
+      "id": "SHOWER-B",
+      "name": "Retained shower zone",
+      "bounds_in": [
+        -50,
+        100,
+        0,
+        160
+      ],
+      "bounds_cm": [
+        -127.0,
+        254.0,
+        0.0,
+        406.4
+      ],
+      "polygon_in": [
+        [
+          -50,
+          100
+        ],
+        [
+          0,
+          100
+        ],
+        [
+          0,
+          160
+        ],
+        [
+          -50,
+          160
+        ]
+      ],
+      "dimensions_in": [
+        50,
+        60,
+        0
+      ],
+      "dimensions_cm": [
+        127.0,
+        152.4,
+        0.0
+      ],
+      "z_in": [
+        0,
+        0
+      ],
+      "kind": "zone",
+      "option": "B",
+      "z_cm": [
+        0.0,
+        0.0
+      ],
+      "dimensions_feet_inches": [
+        "4 ft 2 in",
+        "5 ft 0 in",
+        "0 ft 0 in"
+      ]
+    },
+    {
+      "id": "NICHE-A",
+      "name": "Recessed shower niche",
+      "bounds_in": [
+        -56,
+        124,
+        -50,
+        168
+      ],
+      "bounds_cm": [
+        -142.24,
+        314.96,
+        -127.0,
+        426.72
+      ],
+      "polygon_in": [
+        [
+          -56,
+          124
+        ],
+        [
+          -50,
+          124
+        ],
+        [
+          -50,
+          168
+        ],
+        [
+          -56,
+          168
+        ]
+      ],
+      "dimensions_in": [
+        6,
+        44,
+        24
+      ],
+      "dimensions_cm": [
+        15.24,
+        111.76,
+        60.96
+      ],
+      "z_in": [
+        42,
+        66
+      ],
+      "kind": "niche",
+      "option": "A",
+      "status": "recess beyond nominal footprint; wall build-up unverified",
+      "z_cm": [
+        106.68,
+        167.64
+      ],
+      "dimensions_feet_inches": [
+        "0 ft 6 in",
+        "3 ft 8 in",
+        "2 ft 0 in"
+      ]
+    },
+    {
+      "id": "BENCH-B",
+      "name": "Corner stone bench",
+      "polygon_in": [
+        [
+          -50,
+          100
+        ],
+        [
+          -32,
+          100
+        ],
+        [
+          -50,
+          118
+        ]
+      ],
+      "z_in": [
+        0,
+        18
+      ],
+      "kind": "stone",
+      "option": "B",
+      "z_cm": [
+        0.0,
+        45.72
+      ]
+    }
+  ],
+  "walls": [
+    {
+      "id": "WALL-S1",
+      "bounds_in": [
+        0,
+        -4,
+        45,
+        0
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "existing",
+      "cutaway": true,
+      "bounds_cm": [
+        0.0,
+        -10.16,
+        114.3,
+        0.0
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "WALL-S2",
+      "bounds_in": [
+        105,
+        -4,
+        154,
+        0
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "existing",
+      "cutaway": true,
+      "bounds_cm": [
+        266.7,
+        -10.16,
+        391.16,
+        0.0
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "WALL-E",
+      "bounds_in": [
+        150,
+        0,
+        154,
+        204
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "existing",
+      "bounds_cm": [
+        381.0,
+        0.0,
+        391.16,
+        518.16
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "WALL-NW",
+      "bounds_in": [
+        -54,
+        200,
+        110,
+        204
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "existing",
+      "bounds_cm": [
+        -137.16,
+        508.0,
+        279.4,
+        518.16
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "WALL-NE",
+      "bounds_in": [
+        140,
+        200,
+        150,
+        204
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "existing",
+      "bounds_cm": [
+        355.6,
+        508.0,
+        381.0,
+        518.16
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "WALL-N-SILL",
+      "bounds_in": [
+        110,
+        200,
+        140,
+        204
+      ],
+      "z_in": [
+        0,
+        42
+      ],
+      "status": "existing",
+      "bounds_cm": [
+        279.4,
+        508.0,
+        355.6,
+        518.16
+      ],
+      "z_cm": [
+        0.0,
+        106.68
+      ]
+    },
+    {
+      "id": "WALL-N-HEAD",
+      "bounds_in": [
+        110,
+        200,
+        140,
+        204
+      ],
+      "z_in": [
+        90,
+        96
+      ],
+      "status": "existing",
+      "bounds_cm": [
+        279.4,
+        508.0,
+        355.6,
+        518.16
+      ],
+      "z_cm": [
+        228.6,
+        243.84
+      ]
+    },
+    {
+      "id": "WALL-WING",
+      "bounds_in": [
+        -54,
+        96,
+        -50,
+        200
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "existing",
+      "cutaway": true,
+      "bounds_cm": [
+        -137.16,
+        243.84,
+        -127.0,
+        508.0
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "WALL-WING-S",
+      "bounds_in": [
+        -50,
+        96,
+        0,
+        100
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "existing",
+      "cutaway": true,
+      "bounds_cm": [
+        -127.0,
+        243.84,
+        0.0,
+        254.0
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "WALL-W1",
+      "bounds_in": [
+        -4,
+        0,
+        0,
+        52
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "existing",
+      "cutaway": true,
+      "bounds_cm": [
+        -10.16,
+        0.0,
+        0.0,
+        132.08
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "WALL-W2",
+      "bounds_in": [
+        -4,
+        84,
+        0,
+        100
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "existing",
+      "cutaway": true,
+      "bounds_cm": [
+        -10.16,
+        213.36,
+        0.0,
+        254.0
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "PART-WC-W",
+      "bounds_in": [
+        98,
+        140,
+        100,
+        200
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "new",
+      "note": "2 in diagram thickness only; final partition outside WC",
+      "bounds_cm": [
+        248.92,
+        355.6,
+        254.0,
+        508.0
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "PART-WC-S1",
+      "bounds_in": [
+        100,
+        138,
+        108,
+        140
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "new",
+      "bounds_cm": [
+        254.0,
+        350.52,
+        274.32,
+        355.6
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "PART-WC-S2",
+      "bounds_in": [
+        136,
+        138,
+        150,
+        140
+      ],
+      "z_in": [
+        0,
+        96
+      ],
+      "status": "new",
+      "note": "intersects S-01C; coordination hold",
+      "bounds_cm": [
+        345.44,
+        350.52,
+        381.0,
+        355.6
+      ],
+      "z_cm": [
+        0.0,
+        243.84
+      ]
+    },
+    {
+      "id": "PART-WC-HEAD",
+      "bounds_in": [
+        108,
+        138,
+        136,
+        140
+      ],
+      "z_in": [
+        84,
+        96
+      ],
+      "status": "new",
+      "bounds_cm": [
+        274.32,
+        350.52,
+        345.44,
+        355.6
+      ],
+      "z_cm": [
+        213.36,
+        243.84
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "id": "D-01",
+      "name": "French entry",
+      "axis": "X",
+      "fixed": 0,
+      "interval": [
+        45,
+        105
+      ],
+      "width_in": 60,
+      "height_in": 84,
+      "type": "double swing",
+      "verified": "position per user; height assumed",
+      "width_cm": 152.4,
+      "fixed_cm": 0.0,
+      "interval_cm": [
+        114.3,
+        266.7
+      ]
+    },
+    {
+      "id": "D-02",
+      "name": "WIC portal",
+      "axis": "Y",
+      "fixed": 0,
+      "interval": [
+        52,
+        84
+      ],
+      "width_in": 32,
+      "height_in": 84,
+      "type": "pocket proposed",
+      "pocket_interval": [
+        20,
+        52
+      ],
+      "verified": "pocket wall structure unverified",
+      "width_cm": 81.28,
+      "fixed_cm": 0.0,
+      "interval_cm": [
+        132.08,
+        213.36
+      ]
+    },
+    {
+      "id": "D-03",
+      "name": "WC entrance",
+      "axis": "X",
+      "fixed": 140,
+      "interval": [
+        108,
+        136
+      ],
+      "width_in": 28,
+      "height_in": 84,
+      "type": "pocket requested; unresolved",
+      "verified": "only 14 in east / 8 in west pocket run",
+      "width_cm": 71.12,
+      "fixed_cm": 355.6,
+      "interval_cm": [
+        274.32,
+        345.44
+      ]
+    },
+    {
+      "id": "D-04A",
+      "name": "Shower pivot",
+      "axis": "Y",
+      "fixed": 0,
+      "interval": [
+        138,
+        168
+      ],
+      "width_in": 30,
+      "height_in": 96,
+      "type": "pivot",
+      "option": "A",
+      "width_cm": 76.2,
+      "fixed_cm": 0.0,
+      "interval_cm": [
+        350.52,
+        426.72
+      ]
+    },
+    {
+      "id": "D-04B",
+      "name": "Shower pivot",
+      "axis": "Y",
+      "fixed": 0,
+      "interval": [
+        128,
+        158
+      ],
+      "width_in": 30,
+      "height_in": 96,
+      "type": "pivot",
+      "option": "B",
+      "width_cm": 76.2,
+      "fixed_cm": 0.0,
+      "interval_cm": [
+        325.12,
+        401.32
+      ]
+    },
+    {
+      "id": "W-01",
+      "name": "West wet-zone opening",
+      "axis": "Y",
+      "fixed": 0,
+      "interval": [
+        158,
+        190
+      ],
+      "width_in": 32,
+      "sill_in": 42,
+      "head_in": 90,
+      "type": "window",
+      "verified": "user coordinates; overlaps wing and proposed S-03 / M-01",
+      "width_cm": 81.28,
+      "fixed_cm": 0.0,
+      "interval_cm": [
+        401.32,
+        482.6
+      ]
+    },
+    {
+      "id": "W-02",
+      "name": "WC north window",
+      "axis": "X",
+      "fixed": 200,
+      "interval": [
+        110,
+        140
+      ],
+      "width_in": 30,
+      "sill_in": 42,
+      "head_in": 90,
+      "type": "window",
+      "verified": "sill/head assumed; overlaps S-04",
+      "width_cm": 76.2,
+      "fixed_cm": 508.0,
+      "interval_cm": [
+        279.4,
+        355.6
+      ]
+    }
+  ],
+  "glass": {
+    "A": [
+      {
+        "p1": [
+          0,
+          100
+        ],
+        "p2": [
+          0,
+          138
+        ],
+        "z_in": [
+          0,
+          96
+        ]
+      },
+      {
+        "p1": [
+          0,
+          138
+        ],
+        "p2": [
+          0,
+          168
+        ],
+        "z_in": [
+          0,
+          96
+        ],
+        "type": "pivot door"
+      }
+    ],
+    "B": [
+      {
+        "p1": [
+          0,
+          100
+        ],
+        "p2": [
+          0,
+          128
+        ],
+        "z_in": [
+          0,
+          96
+        ]
+      },
+      {
+        "p1": [
+          0,
+          128
+        ],
+        "p2": [
+          0,
+          158
+        ],
+        "z_in": [
+          0,
+          96
+        ],
+        "type": "pivot door"
+      },
+      {
+        "p1": [
+          0,
+          158
+        ],
+        "p2": [
+          0,
+          160
+        ],
+        "z_in": [
+          0,
+          96
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "basis": "Assumed internal envelope before shelves/hardware/equipment; not certified net capacity",
+    "target_ft3": 142.4,
+    "target_l_exact": 4032.3189547008,
+    "target_l_user": 4032,
+    "groups": [
+      {
+        "id": "S-01",
+        "parts": [
+          {
+            "name": "S-01A internal tall space",
+            "size_in": [
+              16,
+              22,
+              88
+            ],
+            "count": 1,
+            "size_cm": [
+              40.64,
+              55.88,
+              223.52
+            ],
+            "volume_in3": 30976,
+            "volume_ft3": 17.925925925925927,
+            "volume_l": 507.605694464
+          },
+          {
+            "name": "S-01C internal tall space",
+            "size_in": [
+              16,
+              22,
+              88
+            ],
+            "count": 1,
+            "size_cm": [
+              40.64,
+              55.88,
+              223.52
+            ],
+            "volume_in3": 30976,
+            "volume_ft3": 17.925925925925927,
+            "volume_l": 507.605694464
+          },
+          {
+            "name": "Four U-drawer envelopes",
+            "size_in": [
+              32,
+              20,
+              9
+            ],
+            "count": 4,
+            "void_in": [
+              12,
+              10,
+              9
+            ],
+            "size_cm": [
+              81.28,
+              50.8,
+              22.86
+            ],
+            "void_cm": [
+              30.48,
+              25.4,
+              22.86
+            ],
+            "volume_in3": 18720,
+            "volume_ft3": 10.833333333333334,
+            "volume_l": 306.76583808
+          },
+          {
+            "name": "S-01B grooming space",
+            "size_in": [
+              24,
+              12,
+              56
+            ],
+            "count": 1,
+            "size_cm": [
+              60.96,
+              30.48,
+              142.24
+            ],
+            "volume_in3": 16128,
+            "volume_ft3": 9.333333333333334,
+            "volume_l": 264.290568192
+          }
+        ],
+        "volume_in3": 96800,
+        "volume_ft3": 56.01851851851852,
+        "volume_l": 1586.2677952
+      },
+      {
+        "id": "S-02",
+        "parts": [
+          {
+            "name": "S-02A utility locker",
+            "size_in": [
+              16,
+              22,
+              88
+            ],
+            "count": 1,
+            "size_cm": [
+              40.64,
+              55.88,
+              223.52
+            ],
+            "volume_in3": 30976,
+            "volume_ft3": 17.925925925925927,
+            "volume_l": 507.605694464
+          },
+          {
+            "name": "S-02A dual hamper compartment",
+            "size_in": [
+              28,
+              22,
+              30
+            ],
+            "count": 1,
+            "size_cm": [
+              71.12,
+              55.88,
+              76.2
+            ],
+            "volume_in3": 18480,
+            "volume_ft3": 10.694444444444445,
+            "volume_l": 302.83294272
+          },
+          {
+            "name": "S-02A upper linen compartment",
+            "size_in": [
+              28,
+              22,
+              54
+            ],
+            "count": 1,
+            "size_cm": [
+              71.12,
+              55.88,
+              137.16
+            ],
+            "volume_in3": 33264,
+            "volume_ft3": 19.25,
+            "volume_l": 545.0992968959999
+          },
+          {
+            "name": "S-02B robe internal space",
+            "size_in": [
+              14,
+              18,
+              88
+            ],
+            "count": 1,
+            "size_cm": [
+              35.56,
+              45.72,
+              223.52
+            ],
+            "volume_in3": 22176,
+            "volume_ft3": 12.833333333333334,
+            "volume_l": 363.399531264
+          }
+        ],
+        "volume_in3": 104896,
+        "volume_ft3": 60.7037037037037,
+        "volume_l": 1718.937465344
+      },
+      {
+        "id": "S-03",
+        "parts": [
+          {
+            "name": "Heated towel internal space",
+            "size_in": [
+              20,
+              14,
+              76
+            ],
+            "count": 1,
+            "size_cm": [
+              50.8,
+              35.56,
+              193.04
+            ],
+            "volume_in3": 21280,
+            "volume_ft3": 12.314814814814815,
+            "volume_l": 348.71672192
+          }
+        ],
+        "option": "A",
+        "volume_in3": 21280,
+        "volume_ft3": 12.314814814814815,
+        "volume_l": 348.71672192
+      },
+      {
+        "id": "S-04",
+        "parts": [
+          {
+            "name": "Over-cistern internal space",
+            "size_in": [
+              44,
+              8,
+              38
+            ],
+            "count": 1,
+            "size_cm": [
+              111.76,
+              20.32,
+              96.52
+            ],
+            "volume_in3": 13376,
+            "volume_ft3": 7.7407407407407405,
+            "volume_l": 219.193368064
+          }
+        ],
+        "status": "conflicts with north window",
+        "volume_in3": 13376,
+        "volume_ft3": 7.7407407407407405,
+        "volume_l": 219.193368064
+      },
+      {
+        "id": "S-05",
+        "parts": [],
+        "status": "undefined in supplied layout; no geometry or capacity invented",
+        "volume_in3": 0,
+        "volume_ft3": 0.0,
+        "volume_l": 0.0
+      }
+    ],
+    "option_A_estimate_ft3": 136.77777777777777,
+    "option_B_estimate_ft3": 124.46296296296296
+  },
+  "coordination_issues": [
+    {
+      "id": "C01",
+      "subject": "Skylight / tub",
+      "fact": "Tub centre (50,176); skylight centre (60,150). Offset (-10,+26) inches.",
+      "resolution": "Coordinates retained. Tub is partly beneath skylight, not centred."
+    },
+    {
+      "id": "C02",
+      "subject": "North ledge",
+      "fact": "Y 192..200 gives 8 in depth; narrative says 10 in. Tub touches ledge at Y192.",
+      "resolution": "8 in drawn. Final cleaning / installation gap to be coordinated."
+    },
+    {
+      "id": "C03",
+      "subject": "Circulation",
+      "fact": "Requested 102 x 138 in rectangle intersects WC zone by 208 in2 and entry door sweeps.",
+      "resolution": "102 in is cabinet-front separation, not a universally clear rectangle or code finding."
+    },
+    {
+      "id": "C04",
+      "subject": "WC pocket door",
+      "fact": "28 in opening has only 14 in east / 8 in west return; neither fits a conventional 28 in pocket.",
+      "resolution": "Opening retained; pocket shown as unresolved design intent, no false pocket enclosure."
+    },
+    {
+      "id": "C05",
+      "subject": "Wet-zone west window",
+      "fact": "X=0,Y158..190 lies between main room and west wing; overlaps S-03, glass and chase.",
+      "resolution": "Reference window drawn dashed. Exterior condition / proposed treatment must be resolved."
+    },
+    {
+      "id": "C06",
+      "subject": "North WC window / S-04",
+      "fact": "Window X110..140 overlaps cabinet X102..148; assumed vertical ranges also overlap.",
+      "resolution": "Cabinet and window shown; no unobstructed daylight claim."
+    },
+    {
+      "id": "C07",
+      "subject": "Storage target",
+      "fact": "S-05 undefined; 142.4 ft3 cannot be established from supplied cabinet dimensions alone.",
+      "resolution": "Report explicit internal-envelope estimate. Drawer runners, shelf thickness and equipment reduce usable capacity."
+    },
+    {
+      "id": "C08",
+      "subject": "Tankless / steam systems",
+      "fact": "Fuel, flow/temperature demand, vent, condensate, electrical service and steam generator not specified.",
+      "resolution": "Option A conditional. Service access from east at Y184..200; equipment fit and steam generator remain unverified."
+    },
+    {
+      "id": "C09",
+      "subject": "Shower niche",
+      "fact": "6 in recess projects west beyond X=-50 boundary; wall thickness unknown.",
+      "resolution": "Recess is design intent; no structural/exterior wall alteration approval inferred."
+    },
+    {
+      "id": "C10",
+      "subject": "Partition / tall vanity",
+      "fact": "Full S-01C reaches Y140; a finite WC south partition intrudes into cabinet at its north end.",
+      "resolution": "2 in partition is diagrammatic; cabinet termination requires construction detailing."
+    },
+    {
+      "id": "C11",
+      "subject": "Source reliability",
+      "fact": "Employer brief lists approximate 36 x 60 WC and calls 243 sq ft preliminary; user specifies 50 x 60.",
+      "resolution": "Use latest user coordinate schedule for model; do not describe as a completed measured survey."
+    },
+    {
+      "id": "C12",
+      "subject": "Heights and floor area",
+      "fact": "Ceiling, sill, head, wall build-ups and cabinet internals are not measured.",
+      "resolution": "96 in ceiling, window heights and 4 in perimeter/2 in partition diagram thickness are explicit modelling assumptions; 243.06 sq ft is nominal coordinate area."
+    }
+  ],
+  "change_schedule": [
+    {
+      "id": "P01",
+      "system": "Bath",
+      "option": "A+B",
+      "action": "Remove stepped deck; freestanding bath and floor filler near existing wet zone.",
+      "dependency": "Trap/drain positions, slab recess and waterproofing survey."
+    },
+    {
+      "id": "P02",
+      "system": "Shower",
+      "option": "A",
+      "action": "Extend nominal zone 50 x 60 to 50 x 84; two rain heads; thermostatic controls; level threshold.",
+      "dependency": "Slope, linear drain, membrane continuity, hot-water delivery and steam enclosure design."
+    },
+    {
+      "id": "M01",
+      "system": "Hot water",
+      "option": "A",
+      "action": "Tank-to-tankless conversion in 50 x 16 chase; PEX manifold.",
+      "dependency": "Licensed sizing, vent/fuel or electrical supply, condensate, service clearances and access."
+    },
+    {
+      "id": "M02",
+      "system": "Utility",
+      "option": "B",
+      "action": "Retain 50 x 40 mechanical closet and equipment footprint.",
+      "dependency": "Existing service entrance and clearances unverified; no utility alteration proposed."
+    },
+    {
+      "id": "P03",
+      "system": "WC",
+      "option": "A+B",
+      "action": "Wall-hung WC / concealed carrier; keep nominated stack point (125,182); small rinse basin.",
+      "dependency": "Carrier anchorage, waste-offset connection and branch drain / vent. Stack point is not cistern position."
+    },
+    {
+      "id": "E01",
+      "system": "Power",
+      "option": "A+B",
+      "action": "Grooming tower GFCI receptacles, heated floor/cabinets, mirror/task/accent lighting.",
+      "dependency": "Local wet-zone and electrical design; appliance ratings, circuits, heat dissipation and switched isolation."
+    },
+    {
+      "id": "M03",
+      "system": "Ventilation",
+      "option": "A+B",
+      "action": "Exhaust at WC / wet zone; steam feature in A.",
+      "dependency": "Duct routes and equipment sizing; steam generator location not allocated."
+    },
+    {
+      "id": "A01",
+      "system": "Millwork / openings",
+      "option": "A+B",
+      "action": "S-01/S-02/S-04; proposed WIC and WC pocket doors.",
+      "dependency": "Pocket travel, wall structure, window conflicts and cabinet access coordination."
+    }
+  ],
+  "cad_sheet_placement": {
+    "sheet1": {
+      "x_range": [
+        0,
+        250
+      ],
+      "plans": [
+        {
+          "option": "existing",
+          "origin_in": [
+            68,
+            40
+          ]
+        },
+        {
+          "option": "A",
+          "origin_in": [
+            68,
+            340
+          ]
+        },
+        {
+          "option": "B",
+          "origin_in": [
+            68,
+            640
+          ]
+        }
+      ]
+    },
+    "sheet2": {
+      "x_range": [
+        300,
+        700
+      ]
+    }
+  },
+  "lighting": {
+    "sun_azimuth_deg": 225,
+    "sun_altitude_deg": 35,
+    "rain_heads_in": [
+      [
+        -27,
+        136,
+        93
+      ],
+      [
+        -27,
+        160,
+        93
+      ]
+    ],
+    "tub_filler_in": [
+      88,
+      173,
+      34
+    ],
+    "floor_heat": "wet-zone intent; no circuit design"
+  }
+}

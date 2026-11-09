@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Luxury Master Bathroom · 243 ft² · Drawing Set</title>
+<style>
+  @font-face{font-family:"Space Grotesk";font-weight:600;src:url(assets/fonts/SpaceGrotesk-600.ttf)}
+  @font-face{font-family:"IBM Plex Sans";font-weight:400;src:url(assets/fonts/IBMPlexSans-400.ttf)}
+  @font-face{font-family:"IBM Plex Sans";font-weight:600;src:url(assets/fonts/IBMPlexSans-600.ttf)}
+  @font-face{font-family:"JetBrains Mono";font-weight:400;src:url(assets/fonts/JetBrainsMono-400.ttf)}
+  :root{--ink:#141413;--rule:#D4D0C8;--muted:#56524B;--walnut:#6B4A2F;--step:#F6F4F0}
+  *{box-sizing:border-box;margin:0;padding:0;border-radius:0}
+  body{background:#FFFFFF;color:var(--ink);font:15px/1.5 "IBM Plex Sans",sans-serif;-webkit-font-smoothing:antialiased}
+  .m{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums}
+  a{color:inherit}
+  .wrap{max-width:1440px;margin:0 auto;padding:32px 32px 0}
+  .frame{border:1px solid var(--ink)}
+  header{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;padding:22px 24px 16px;border-bottom:1px solid var(--ink)}
+  h1{font:600 34px/1.05 "Space Grotesk";letter-spacing:-.03em}
+  header p{color:var(--muted);margin-top:6px;font-size:14px}
+  .facts{display:grid;grid-template-columns:repeat(3,auto);border:1px solid var(--ink)}
+  .facts div{padding:6px 14px;font-size:11px;letter-spacing:.06em;color:var(--muted)}
+  .facts div+div{border-left:1px solid var(--ink)}
+  .facts b{display:block;font:600 20px/1.2 "Space Grotesk";letter-spacing:-.02em;color:var(--ink)}
+  section{border-bottom:1px solid var(--ink);padding:20px 24px 24px}
+  section:last-of-type{border-bottom:0}
+  h2{font:600 13px/1 "Space Grotesk";letter-spacing:.09em;display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+  h2 span{font:400 12px "JetBrains Mono";letter-spacing:0;color:var(--muted)}
+
+  .seg{display:inline-flex;border:1px solid var(--ink)}
+  .seg button{font:600 12px/1 "Space Grotesk";letter-spacing:.06em;background:#FFF;color:var(--ink);border:0;padding:9px 14px;cursor:pointer}
+  .seg button+button{border-left:1px solid var(--ink)}
+  .seg button[aria-pressed=true]{background:var(--ink);color:#FFF}
+  .seg button:focus-visible{outline:2px solid var(--walnut);outline-offset:2px}
+
+  .viewer{display:grid;grid-template-columns:220px 1fr;border:1px solid var(--ink)}
+  .sheets{border-right:1px solid var(--ink)}
+  .sheets button{display:block;width:100%;text-align:left;background:#FFF;border:0;border-bottom:1px solid var(--rule);padding:12px 14px;cursor:pointer;color:var(--ink);font:13px/1.35 "IBM Plex Sans"}
+  .sheets button b{display:block;font:600 20px/1.1 "Space Grotesk";letter-spacing:-.02em}
+  .sheets button[aria-pressed=true]{background:var(--step)}
+  .stage{position:relative;overflow:auto;max-height:78vh;background:#FFF;cursor:zoom-in}
+  .stage img{display:block;width:100%;height:auto}
+  .stage.zoom{cursor:zoom-out}
+  .stage.zoom img{width:auto;max-width:none}
+  .hint{font-size:12px;color:var(--muted);margin-top:8px;display:flex;justify-content:space-between}
+
+  .opt{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:start}
+  .opt figure img{display:block;width:100%;height:auto;border:1px solid var(--rule)}
+  dl{display:grid;grid-template-columns:150px 1fr;border-top:1px solid var(--ink);font-size:14px}
+  dt,dd{padding:8px 0;border-bottom:1px solid var(--rule)}
+  dt{font-weight:600}
+
+  .views{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:20px}
+  .views img{display:block;width:100%;height:280px;object-fit:cover;border:1px solid var(--rule)}
+  figcaption{font-size:12.5px;color:var(--muted);margin-top:6px}
+  figcaption b{color:var(--ink);font-family:"Space Grotesk";font-weight:600;letter-spacing:.04em;margin-right:6px}
+
+  table{border-collapse:collapse;width:100%;font-size:14px}
+  th{font:600 11px "IBM Plex Sans";letter-spacing:.06em;text-align:left;padding:6px 8px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+  td{padding:7px 8px;border-bottom:1px solid var(--rule);vertical-align:top}
+  td.n,th.n{text-align:right;font-family:"JetBrains Mono";font-variant-numeric:tabular-nums;white-space:nowrap}
+  tbody tr:nth-child(even) td{background:var(--step)}
+  tr.tot td{font-weight:600;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);background:#FFF}
+  td.dim{color:var(--muted)}
+  .small{font-size:12.5px;color:var(--muted);margin-top:10px;max-width:960px}
+
+  .dl{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--ink)}
+  .dl a{display:block;padding:14px 16px;text-decoration:none;border-left:1px solid var(--ink)}
+  .dl a:first-child{border-left:0}
+  .dl a:hover,.dl a:focus-visible{background:var(--step);outline:none}
+  .dl b{display:block;font:600 16px/1.2 "Space Grotesk";letter-spacing:-.01em}
+  .dl span{display:block;font-size:12.5px;color:var(--muted);margin-top:4px}
+  .dl .m{font-size:12px;color:var(--ink);margin-top:8px}
+
+  .tb{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;border-top:1px solid var(--ink)}
+  .tb div{padding:8px 14px;border-left:1px solid var(--ink);font-size:13px}
+  .tb div:first-child{border-left:0;font:600 14px "Space Grotesk"}
+  .tb small{display:block;font:600 10px "IBM Plex Sans";letter-spacing:.1em;color:var(--muted)}
+  @media (max-width:900px){.viewer,.opt,.views,.dl{grid-template-columns:1fr}.sheets{display:flex;overflow:auto;border-right:0;border-bottom:1px solid var(--ink)}.sheets button{min-width:150px;border-bottom:0;border-right:1px solid var(--rule)}.tb,header{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="frame">
+  <header>
+    <div>
+      <h1>LUXURY MASTER BATHROOM · 243 FT² / 22.58 M²</h1>
+      <p>Coordinate-based concept set: four A3 sheets, Option A / Option B plans, elevations, storage schedule and editable CAD.</p>
+    </div>
+    <div class="facts">
+      <div>FOOTPRINT<b class="m">35,000 in²</b></div>
+      <div>CAD DIMENSIONS<b class="m">79</b></div>
+      <div>DXF AUDIT ERRORS<b class="m">0</b></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>DRAWING SET <span>ID-01 – ID-04 · 3200 × 2400 px · click sheet to zoom</span></h2>
+    <div class="viewer">
+      <nav class="sheets" id="sheets" aria-label="Sheets"></nav>
+      <div class="stage" id="stage" tabindex="0" aria-label="Sheet viewer"><img id="sheetImg" alt=""></div>
+    </div>
+    <div class="hint"><span id="sheetTitle"></span><a id="sheetOpen" target="_blank" rel="noopener">Open full resolution</a></div>
+  </section>
+
+  <section>
+    <h2>OPTION A / OPTION B
+      <span class="seg" role="group" aria-label="Option">
+        <button type="button" data-opt="A" aria-pressed="true">OPTION A · PRIMARY</button><button type="button" data-opt="B" aria-pressed="false">OPTION B · UTILITY UNTOUCHED</button>
+      </span>
+    </h2>
+    <div class="opt">
+      <figure><img id="optImg" src="assets/cad_plan_option_a.png" alt="Option plan"><figcaption id="optCap"></figcaption></figure>
+      <dl id="optDl"></dl>
+    </div>
+  </section>
+
+  <section>
+    <h2>3D VIEWS <span>cutaway from CAD coordinates · two concept views</span></h2>
+    <div class="views">
+      <figure><a href="assets/cad_3d_cutaway_iso.png" target="_blank" rel="noopener"><img src="assets/cad_3d_cutaway_iso.png" alt="3D cutaway axonometric" loading="lazy" style="object-fit:contain;background:#FFF"></a><figcaption><b>CUTAWAY AXO</b>Generated 1:1 from layout_geometry.json</figcaption></figure>
+      <figure><a href="assets/view1_north_sanctuary.jpg" target="_blank" rel="noopener"><img src="assets/view1_north_sanctuary.jpg" alt="North wet alcove view" loading="lazy"></a><figcaption><b>NORTH WET ALCOVE</b>Concept view; CAD governs geometry</figcaption></figure>
+      <figure><a href="assets/view2_east_vanity_storage.jpg" target="_blank" rel="noopener"><img src="assets/view2_east_vanity_storage.jpg" alt="East vanity and storage view" loading="lazy"></a><figcaption><b>EAST VANITY</b>Concept view; CAD governs geometry</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>STORAGE SCHEDULE <span>internal envelope before shelves, runners and equipment</span></h2>
+    <table>
+      <thead><tr><th>GROUP</th><th>BASIS</th><th class="n">OPTION A · ft³</th><th class="n">OPTION B · ft³</th><th class="n">OPTION A · L</th></tr></thead>
+      <tbody>
+        <tr><td>S-01 Vanity wall</td><td>Two 16 × 22 × 88" towers · four 32 × 20 × 9" drawers less plumbing notch · 24 × 12 × 56" grooming tower</td><td class="n">56.02</td><td class="n">56.02</td><td class="n">1,586</td></tr>
+        <tr><td>S-02 West linen wall</td><td>16 × 22 × 88" utility · 28 × 22 × 30" hamper · 28 × 22 × 54" linen · 14 × 18 × 88" robe</td><td class="n">60.70</td><td class="n">60.70</td><td class="n">1,719</td></tr>
+        <tr><td>S-03 Heated towel</td><td>20 × 14 × 76" interior, Option A shower wing</td><td class="n">12.31</td><td class="n">—</td><td class="n">349</td></tr>
+        <tr><td>S-04 Over cistern</td><td>44 × 8 × 38" interior; north window overlap to coordinate</td><td class="n">7.74</td><td class="n">7.74</td><td class="n">219</td></tr>
+        <tr><td class="dim">S-05</td><td class="dim">Not defined; no capacity counted</td><td class="n dim">—</td><td class="n dim">—</td><td class="n dim">—</td></tr>
+        <tr class="tot"><td>Total</td><td>Brief target 142.4 ft³ (4,032 L)</td><td class="n">136.78</td><td class="n">124.46</td><td class="n">3,873</td></tr>
+      </tbody>
+    </table>
+    <p class="small">Existing conditions are read from the supplied sketches and walkthrough video, not a measured survey. Ceiling height 96" and window heights are modelling assumptions; coordination holds C01–C12 are listed in layout_geometry.json.</p>
+  </section>
+
+  <section>
+    <h2>DOWNLOADS <span>exports/</span></h2>
+    <div class="dl">
+      <a href="exports/Master_Bathroom_243sqft_Proposal.dwg" download><b>DWG</b><span>R2000 companion · annotations as vector outlines</span><span class="m">3.3 MB</span></a>
+      <a href="exports/Master_Bathroom_243sqft_Proposal.dxf" download><b>DXF</b><span>R2010 · inches · 79 dimensions · 15 layers</span><span class="m">300 KB</span></a>
+      <a href="exports/Luxury_Bathroom_243sqft_Submission_A3.pdf" download><b>A3 PDF</b><span>Four-sheet portfolio ID-01 – ID-04</span><span class="m">PDF</span></a>
+      <a href="exports/Luxury_Bathroom_243sqft_CAD_Pack.zip" download><b>CAD PACK</b><span>DXF + DWG + geometry JSON + validation + PDF</span><span class="m">ZIP</span></a>
+    </div>
+  </section>
+
+  <div class="tb">
+    <div>LUXURY MASTER BATHROOM · 243 FT²</div>
+    <div><small>SCALE</small><span class="m">NTS · in / cm</span></div>
+    <div><small>DATE · REV</small><span class="m">2026-11-10 · 01</span></div>
+    <div><small>SOURCE</small><span class="m">DXF R2010</span></div>
+  </div>
+</div></div>
+<div style="height:32px"></div>
+
+<script src="boards.js"></script>
+<script>
+(() => {
+  const boards = window.BOARDS || [];
+  const nav = document.getElementById('sheets'), img = document.getElementById('sheetImg'),
+        stage = document.getElementById('stage'), title = document.getElementById('sheetTitle'),
+        open = document.getElementById('sheetOpen');
+  function show(i) {
+    const b = boards[i];
+    img.src = b.src; img.alt = b.id + ' ' + b.title;
+    title.textContent = b.id + ' · ' + b.title;
+    open.href = b.src;
+    stage.classList.remove('zoom');
+    nav.querySelectorAll('button').forEach((x, j) => x.setAttribute('aria-pressed', j === i));
+  }
+  boards.forEach((b, i) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.innerHTML = '<b></b>';
+    btn.firstChild.textContent = b.id;
+    btn.append(b.title);
+    btn.onclick = () => show(i);
+    nav.append(btn);
+  });
+  stage.onclick = () => stage.classList.toggle('zoom');
+  stage.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); stage.classList.toggle('zoom'); } };
+  if (boards.length) show(0);
+
+  const OPT = {
+    A: { img: 'assets/cad_plan_option_a.png', cap: 'Option A plan · CAD sheet A-01',
+         rows: [['Shower', '50" × 84" walk-in, linear drain, 18" heated bench, 44" niche'], ['Hot water', 'Wall-hung tankless in 50" × 16" chase (frees 50" × 24")'],
+                ['Tub', '68" freestanding stone tub in 100" × 52" alcove; stepped deck removed'], ['Millwork', 'S-01 · S-02 · S-03 · S-04'],
+                ['Storage', '136.78 ft³ / 3,873 L'], ['Stack / vanity', '0" move']] },
+    B: { img: 'assets/crop_existing_vs_b.png', cap: 'Existing interpretation (left) vs. Option B (right) · CAD sheet A-02',
+         rows: [['Shower', '50" × 60" retained in west wing'], ['Hot water', 'Existing 50" × 40" mechanical closet untouched'],
+                ['Tub', 'Same 68" freestanding tub as Option A'], ['Millwork', 'S-01 · S-02 · S-04 (S-03 omitted)'],
+                ['Storage', '124.46 ft³ / 3,524 L'], ['Stack / vanity', '0" move']] }
+  };
+  const oImg = document.getElementById('optImg'), oCap = document.getElementById('optCap'), oDl = document.getElementById('optDl');
+  function opt(k) {
+    const o = OPT[k];
+    oImg.src = o.img; oImg.alt = 'Option ' + k + ' plan'; oCap.textContent = o.cap;
+    oDl.replaceChildren(...o.rows.flatMap(([t, d]) => { const a = document.createElement('dt'), b = document.createElement('dd'); a.textContent = t; b.textContent = d; return [a, b]; }));
+    document.querySelectorAll('[data-opt]').forEach(b => b.setAttribute('aria-pressed', b.dataset.opt === k));
+  }
+  document.querySelectorAll('[data-opt]').forEach(b => b.onclick = () => opt(b.dataset.opt));
+  opt('A');
+})();
+</script>
+</body>
+</html>

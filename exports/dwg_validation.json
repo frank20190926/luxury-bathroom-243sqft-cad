@@ -1,0 +1,28 @@
+{
+  "dwg_header": "AC1015",
+  "dwg_version": "AutoCAD 2000",
+  "source_dxf_version": "R2010 / AC1024",
+  "modelspace_entities": 1414,
+  "blocks": 84,
+  "modelspace_differences": [],
+  "block_differences": [],
+  "roundtrip_audit_errors": 0,
+  "roundtrip_audit_fixes": 0,
+  "converter_warnings": {
+    "dxf2dwg": 151,
+    "dwg2dxf": 379
+  },
+  "text_entities_outlined": 257,
+  "dimensions_flattened_for_dwg": true,
+  "outline_tolerance_in": 0.002,
+  "comparison_tolerance_in": 1e-05,
+  "roundtrip_units": 1,
+  "placed_block_references": 0,
+  "comparison_scope": "All placed modelspace entities and referenced blocks; unused library blocks excluded",
+  "limitations": [
+    "DWG text and dimensions are vector outlines / primitives for LibreDWG compatibility; edit semantic annotations in the R2010 DXF.",
+    "LibreDWG emits metadata/handle/HATCH warnings; local geometry comparison does not certify AutoCAD interoperability.",
+    "DWG has not been opened in Autodesk AutoCAD. Use the audited R2010 DXF as authority."
+  ],
+  "status": "local_roundtrip_geometry_pass"
+}
