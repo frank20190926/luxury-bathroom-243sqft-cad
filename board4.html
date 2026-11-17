@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ID-04 Material Palette, Constructability Audit &amp; Option B</title>
+<!-- 1600x1200 CSS px, rendered at device scale 2 -> 3200x2400 (A3 landscape). Plan: assets/crop_existing_vs_b.png
+     (crop of the CAD comparison sheet generated from layout_geometry.json). Figures match layout_geometry.json / exports/*.json. -->
+<style>
+  @font-face{font-family:"Space Grotesk";font-weight:600;src:url(assets/fonts/SpaceGrotesk-600.ttf)}
+  @font-face{font-family:"IBM Plex Sans";font-weight:400;src:url(assets/fonts/IBMPlexSans-400.ttf)}
+  @font-face{font-family:"IBM Plex Sans";font-weight:600;src:url(assets/fonts/IBMPlexSans-600.ttf)}
+  @font-face{font-family:"JetBrains Mono";font-weight:400;src:url(assets/fonts/JetBrainsMono-400.ttf)}
+  :root{--paper:#FFFFFF;--ink:#141413;--rule:#D4D0C8;--muted:#56524B;--walnut:#6B4A2F;--step:#F6F4F0}
+  *{box-sizing:border-box;margin:0;padding:0;border-radius:0;box-shadow:none}
+  html,body{width:1600px;height:1200px;overflow:hidden;background:var(--paper)}
+  body{font-family:"IBM Plex Sans",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+  .m{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums}
+  .sheet{position:absolute;left:16px;top:16px;width:1568px;height:1168px;border:1px solid var(--ink);
+    display:grid;grid-template-rows:66px 1fr 54px}
+
+  header{display:grid;grid-template-columns:1fr auto;align-items:end;padding:0 22px 10px;border-bottom:.75pt solid var(--ink)}
+  h1{font-family:"Space Grotesk";font-weight:600;font-size:25px;letter-spacing:-.025em;line-height:1.05}
+  .sub{margin-top:5px;font-size:12px;color:var(--muted)}
+  .hdr-r{font-family:"JetBrains Mono";font-size:10.5px;color:var(--muted);text-align:right;line-height:1.5}
+
+  main{display:grid;grid-template-columns:52% 48%;min-height:0}
+  .left{border-right:.75pt solid var(--ink);display:grid;grid-template-rows:auto auto 1fr;min-height:0}
+  .right{padding:14px 22px 10px 22px;display:flex;flex-direction:column;gap:24px;min-height:0}
+
+  h3{font-family:"Space Grotesk";font-weight:600;font-size:12px;letter-spacing:.07em;margin-bottom:7px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  h3 span{font-family:"JetBrains Mono";font-weight:400;font-size:9.5px;letter-spacing:0;color:var(--muted)}
+
+  .pal{padding:14px 20px 0 22px}
+  .palfig{position:relative;width:100%;}
+  .palfig img{display:block;width:100%;height:auto}
+  .palfig svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+  .tag{font-family:"JetBrains Mono";font-size:11px;fill:var(--ink)}
+  .lbl{font-size:12px;line-height:1;background:#FFFFFF;padding:3px 4px;outline:1px solid #141413}
+  .finishes{display:grid;grid-template-columns:1fr 1fr;column-gap:22px;margin-top:9px;border-top:1px solid var(--ink)}
+  .finishes div{display:grid;grid-template-columns:24px 1fr;padding:4px 0;border-bottom:1px solid var(--rule);font-size:10.6px;line-height:1.3}
+  .finishes b{font-family:"JetBrains Mono";font-weight:400;color:var(--walnut)}
+
+  .plan{padding:14px 20px 0 22px;border-top:.75pt solid var(--ink);margin-top:14px}
+  .plan img{display:block;width:100%;height:auto}
+  .plancap{display:grid;grid-template-columns:1fr 1fr;gap:22px;font-size:10.4px;line-height:1.36;color:#2B2925;padding:4px 0 0}
+  .plancap b{font-family:"Space Grotesk";font-weight:600;font-size:10.5px;letter-spacing:.06em;color:var(--ink);display:block}
+
+  table{border-collapse:collapse;width:100%}
+  thead th{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);font-size:9px;font-weight:600;letter-spacing:.05em;text-align:left;padding:4px 6px;vertical-align:bottom;line-height:1.25}
+  td{padding:7px 6px;font-size:10.8px;line-height:1.34;vertical-align:top;border-bottom:1px solid var(--rule)}
+  tbody tr:last-child td{border-bottom:1px solid var(--ink)}
+  tbody tr:nth-child(even) td{background:var(--step)}
+  td.h{font-weight:600;white-space:nowrap}
+  td.n{font-family:"JetBrains Mono";font-size:10.6px;white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+  .mx td:first-child{width:96px}
+  .mx td:nth-child(2){width:27%}
+  .cost td:first-child{width:118px;font-family:"Space Grotesk";font-weight:600;font-size:10px;letter-spacing:.05em}
+  .st td:first-child{width:56px}
+  .st td.n{width:62px}
+  .st tr.tot td{border-top:1px solid #141413;font-weight:600;background:#FFFFFF}
+  .note{font-size:9.5px;color:var(--muted);line-height:1.35;margin-top:auto;border-top:1px solid var(--rule);padding-top:6px}
+
+  footer{border-top:1px solid var(--ink);display:grid;grid-template-columns:330px 1fr 150px 150px 150px 120px}
+  footer>div{padding:7px 12px;border-left:1px solid var(--ink);display:flex;flex-direction:column;justify-content:center}
+  footer>div:first-child{border-left:0}
+  footer .l{font-size:8.5px;letter-spacing:.1em;color:var(--muted);font-weight:600}
+  footer .v{font-size:12px;margin-top:2px}
+  footer .t{font-family:"Space Grotesk";font-weight:600;font-size:14px;letter-spacing:-.01em}
+  footer .id{font-family:"Space Grotesk";font-weight:600;font-size:28px;letter-spacing:-.02em;line-height:1}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <div>
+      <h1>TACTILE MATERIAL PALETTE, CONSTRUCTABILITY AUDIT &amp; OPTION B ZERO-MECHANICAL-CHANGE LAYOUT</h1>
+      <div class="sub">Finish schedule · plumbing / mechanical comparison against the existing room · cost drivers · CAD deliverables</div>
+    </div>
+    <div class="hdr-r">OPTION A <span class="m">136.78 ft³</span> · OPTION B <span class="m">124.46 ft³</span><br>STORAGE · INTERNAL ENVELOPE ESTIMATE</div>
+  </header>
+
+  <main>
+    <section class="left">
+      <div class="pal">
+        <h3>MATERIAL PALETTE · STUDIO FLATLAY <span>FINISH TAGS 01–06</span></h3>
+        <div class="palfig">
+          <img src="assets/material_palette_flatlay.jpg" alt="Material sample flatlay">
+          <!-- leader lines in % of the photo; tags sit on the clear linen margin -->
+          <svg viewBox="0 0 1000 558" preserveAspectRatio="none">
+            <g stroke="#141413" stroke-width="1.1" fill="none" vector-effect="non-scaling-stroke">
+              <path d="M300 140 L120 40 L60 40"/>
+              <path d="M820 140 L890 40 L950 40"/>
+              <path d="M330 280 L120 280 L60 280"/>
+              <path d="M820 300 L890 300 L950 300"/>
+              <path d="M300 450 L120 520 L60 520"/>
+              <path d="M820 450 L890 520 L950 520"/>
+            </g>
+            <g fill="#141413"><circle cx="300" cy="140" r="2.6"/><circle cx="820" cy="140" r="2.6"/><circle cx="330" cy="280" r="2.6"/><circle cx="820" cy="300" r="2.6"/><circle cx="300" cy="450" r="2.6"/><circle cx="820" cy="450" r="2.6"/></g>
+          </svg>
+          <div class="lbl" style="position:absolute;left:1.2%;top:3.1%"><span class="m">01</span></div>
+          <div class="lbl" style="position:absolute;right:1.2%;top:3.1%"><span class="m">02</span></div>
+          <div class="lbl" style="position:absolute;left:1.2%;top:46.2%"><span class="m">03</span></div>
+          <div class="lbl" style="position:absolute;right:1.2%;top:49.8%"><span class="m">04</span></div>
+          <div class="lbl" style="position:absolute;left:1.2%;top:89.6%"><span class="m">05</span></div>
+          <div class="lbl" style="position:absolute;right:1.2%;top:89.6%"><span class="m">06</span></div>
+        </div>
+        <div class="finishes">
+          <div><b>01</b><span>Honed Roman travertine — floor, wet walls &amp; 2" vanity slab</span></div>
+          <div><b>02</b><span>Quarter-sawn fluted American black walnut — S-01 to S-04 millwork</span></div>
+          <div><b>03</b><span>Brushed champagne bronze PVD — faucets, filler &amp; knurled pulls</span></div>
+          <div><b>04</b><span>Low-iron architectural &amp; reeded privacy glass</span></div>
+          <div><b>05</b><span>Warm ivory mineral limewash plaster <span class="m">#F4EFE6</span></span></div>
+          <div><b>06</b><span>Organic waffle-weave linen &amp; cotton</span></div>
+        </div>
+      </div>
+      <div class="plan">
+        <h3>EXISTING SKETCH &amp; WALKTHROUGH PLAN vs. OPTION B — ZERO-MECHANICAL-CHANGE LAYOUT <span>N ↑</span></h3>
+        <img src="assets/crop_existing_vs_b.png" alt="Existing plan interpretation and Option B plan">
+        <div class="plancap">
+          <div><b>EXISTING</b>Raised 2-step corner tub deck, 50" × 60" shower and 50" × 40" tank / utility closet in the west wing; vanity on the east wall; WC in the NE corner.</div>
+          <div><b>OPTION B</b>Same S-01 134" vanity, S-02 west linen wall and 68" freestanding tub; 50" × 40" mechanical closet untouched; 50" × 60" shower retained.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="right">
+      <div>
+        <h3>01 · CONSTRUCTION PRACTICALITY &amp; PLUMBING / MECHANICAL MATRIX <span>BRIEF §4 &amp; §7</span></h3>
+        <table class="mx">
+          <thead><tr><th>ELEMENT</th><th>EXISTING<br>(SKETCHES &amp; WALKTHROUGH)</th><th>OPTION A — PRIMARY<br>TANKLESS CHASE + 50" × 84" SHOWER</th><th>OPTION B — CONSERVATIVE<br>UTILITY UNTOUCHED + 50" × 60"</th></tr></thead>
+          <tbody>
+            <tr><td class="h">Toilet stack</td><td>NE corner, stack point (125, 182)</td><td><span class="m">0"</span> move; wall-hung pan on carrier</td><td><span class="m">0"</span> move; as Option A</td></tr>
+            <tr><td class="h">Vanity drains</td><td>East wall</td><td><span class="m">0"</span> move; two basins on east wall</td><td><span class="m">0"</span> move</td></tr>
+            <tr><td class="h">Tub drain</td><td>Raised 2-step corner deck</td><td>Within existing NW <span class="m">100" × 60"</span> wet zone; step platform removed</td><td>As Option A</td></tr>
+            <tr><td class="h">Shower drain</td><td>West wing, <span class="m">50" × 60"</span></td><td>Within west wing; zone extended to <span class="m">50" × 84"</span>, linear drain</td><td>Within existing <span class="m">50" × 60"</span> wing</td></tr>
+            <tr><td class="h">Water heater</td><td>Tank in <span class="m">50" × 40"</span> closet</td><td>Wall-hung tankless in <span class="m">50" × 16"</span> chase; frees <span class="m">50" × 24"</span> floor</td><td>No mechanical relocation</td></tr>
+            <tr><td class="h">Structure</td><td>Exterior walls, skylight</td><td colspan="2">No exterior wall or skylight change; interior partitions only — bearing status to be confirmed on site</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <h3>02 · COST DRIVERS &amp; VALUE-ENGINEERING NOTES <span>NO PRICING · SCOPE ONLY</span></h3>
+        <table class="cost">
+          <thead><tr><th>CATEGORY</th><th>ITEMS</th></tr></thead>
+          <tbody>
+            <tr><td>PRIMARY<br>INVESTMENT</td><td>Custom fluted walnut millwork walls S-01 / S-02 · demolition of raised corner tub deck · wet-zone slab waterproofing with radiant floor · optional tankless water-heater upgrade (Option A only)</td></tr>
+            <tr><td>COST SAVING</td><td>Existing skylight retained · WC stack retained · east vanity plumbing wall retained · south entry and west WIC door openings retained · Option B leaves the mechanical closet as is</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <h3>03 · DELIVERABLE &amp; CAD VERIFICATION MANIFEST <span>exports/</span></h3>
+        <table>
+          <thead><tr><th>FILE</th><th>FORMAT · CONTENT</th><th style="text-align:right">SIZE</th></tr></thead>
+          <tbody>
+            <tr><td class="h">Master_Bathroom_243sqft_Proposal.dxf</td><td>AutoCAD DXF R2010, inches · <span class="m">79</span> native dimensions · <span class="m">15</span> layers · audit <span class="m">0</span> errors</td><td class="n">300 KB</td></tr>
+            <tr><td class="h">Master_Bathroom_243sqft_Proposal.dwg</td><td>DWG R2000 companion · annotations as vector outlines; edit text in DXF</td><td class="n">3.3 MB</td></tr>
+            <tr><td class="h">layout_geometry.json</td><td>All coordinates in / cm, storage arithmetic, coordination holds</td><td class="n">49 KB</td></tr>
+            <tr><td class="h">Luxury_Bathroom_243sqft_Submission_A3.pdf</td><td>4-sheet A3 portfolio, ID-01 to ID-04</td><td class="n">A3 × 4</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3>04 · STORAGE SCHEDULE · OPTION A vs. OPTION B <span>INTERNAL ENVELOPE, BEFORE SHELVES &amp; HARDWARE</span></h3>
+        <table class="st">
+          <thead><tr><th>GROUP</th><th>BASIS</th><th style="text-align:right">A · ft³</th><th style="text-align:right">B · ft³</th><th style="text-align:right">A · L</th></tr></thead>
+          <tbody>
+            <tr><td class="h">S-01</td><td>Two 16 × 22 × 88" towers · four U-drawers · grooming tower</td><td class="n">56.02</td><td class="n">56.02</td><td class="n">1,586</td></tr>
+            <tr><td class="h">S-02</td><td>Utility locker · dual hamper · linen · robe column</td><td class="n">60.70</td><td class="n">60.70</td><td class="n">1,719</td></tr>
+            <tr><td class="h">S-03</td><td>Heated towel cabinet in shower wing (Option A only)</td><td class="n">12.31</td><td class="n">—</td><td class="n">349</td></tr>
+            <tr><td class="h">S-04</td><td>Over-cistern &amp; side-wall recessed WC storage</td><td class="n">7.74</td><td class="n">7.74</td><td class="n">219</td></tr>
+            <tr class="tot"><td class="h">TOTAL</td><td>Verified internal cabinet envelopes (+ 44" shower niche)</td><td class="n">136.78</td><td class="n">124.46</td><td class="n">3,873</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Existing conditions are read from the supplied sketches and walkthrough video, not a measured survey. Tankless sizing, venting and fuel / electrical supply (Option A), slab recess and drain positions are confirmed by a licensed trade before fabrication.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div><span class="l">PROJECT</span><span class="t">LUXURY MASTER BATHROOM · 243 FT²</span></div>
+    <div><span class="l">DRAWING TITLE</span><span class="v">Material palette · constructability matrix · Option B · deliverables</span></div>
+    <div><span class="l">SCALE</span><span class="v m">NTS · in / cm</span></div>
+    <div><span class="l">DATE · REV</span><span class="v m">2026-11-10 · 01</span></div>
+    <div><span class="l">SOURCE</span><span class="v m">DXF R2010</span></div>
+    <div><span class="l">SHEET</span><span class="id">ID-04</span></div>
+  </footer>
+</div>
+</body>
+</html>

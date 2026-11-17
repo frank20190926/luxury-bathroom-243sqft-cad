@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ID-03 Interior Elevations, Millwork Sections &amp; Layered Lighting</title>
+<!-- 1600x1200 CSS px, rendered at device scale 2 -> 3200x2400 (A3 landscape). Drawing: assets/crop_4_elevations.png
+     (crop of the CAD elevation sheet generated from layout_geometry.json). All dimensions below match layout_geometry.json. -->
+<style>
+  @font-face{font-family:"Space Grotesk";font-weight:600;src:url(assets/fonts/SpaceGrotesk-600.ttf)}
+  @font-face{font-family:"IBM Plex Sans";font-weight:400;src:url(assets/fonts/IBMPlexSans-400.ttf)}
+  @font-face{font-family:"IBM Plex Sans";font-weight:600;src:url(assets/fonts/IBMPlexSans-600.ttf)}
+  @font-face{font-family:"JetBrains Mono";font-weight:400;src:url(assets/fonts/JetBrainsMono-400.ttf)}
+  :root{--paper:#FFFFFF;--ink:#141413;--rule:#D4D0C8;--muted:#56524B;--walnut:#6B4A2F;--step:#F6F4F0}
+  *{box-sizing:border-box;margin:0;padding:0;border-radius:0;box-shadow:none}
+  html,body{width:1600px;height:1200px;overflow:hidden;background:var(--paper)}
+  body{font-family:"IBM Plex Sans",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+  .m{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums;letter-spacing:0}
+  .sheet{position:absolute;left:16px;top:16px;width:1568px;height:1168px;border:1px solid var(--ink);
+    display:grid;grid-template-rows:66px 716px 1fr 54px}
+
+  header{display:grid;grid-template-columns:1fr auto;align-items:end;padding:0 22px 10px;border-bottom:.75pt solid var(--ink)}
+  h1{font-family:"Space Grotesk";font-weight:600;font-size:27px;letter-spacing:-.025em;line-height:1.05}
+  .sub{margin-top:5px;font-size:12px;color:var(--muted)}
+  .hdr-r{font-family:"JetBrains Mono";font-size:10.5px;color:var(--muted);text-align:right;line-height:1.5}
+
+  .top{display:grid;grid-template-columns:minmax(0,1fr) 262px;min-height:0;border-bottom:.75pt solid var(--ink)}
+  .dwg{position:relative;min-width:0;padding:8px 12px 6px 16px;display:flex;align-items:center;justify-content:center}
+  .dwg img{display:block;width:100%;height:auto;max-height:700px;object-fit:contain}
+  .keys{border-left:1px solid var(--rule);padding:14px 16px 12px;display:flex;flex-direction:column;gap:11px;font-size:10.5px;line-height:1.38}
+  .keys h4{font-family:"Space Grotesk";font-weight:600;font-size:11.5px;letter-spacing:.06em;display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--ink);padding-bottom:3px;margin-bottom:4px}
+  .keys h4 .m{font-size:10px;font-weight:400;letter-spacing:0;color:var(--muted)}
+  .keys p{color:#2B2925}
+  .keys .k{font-family:"JetBrains Mono";font-size:10px;color:var(--walnut)}
+  .keys .hold{margin-top:auto;padding-top:8px;border-top:1px solid var(--rule);font-size:9.5px;color:var(--muted)}
+
+  .tables{display:grid;grid-template-columns:1fr 1.18fr 1fr;gap:22px;padding:16px 22px 12px}
+  h3{font-family:"Space Grotesk";font-weight:600;font-size:12.5px;letter-spacing:.07em;margin-bottom:8px;display:flex;justify-content:space-between;align-items:baseline}
+  h3 span{font-family:"JetBrains Mono";font-weight:400;font-size:9.5px;letter-spacing:0;color:var(--muted)}
+  table{border-collapse:collapse;width:100%}
+  thead th{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);font-size:9.5px;font-weight:600;letter-spacing:.06em;text-align:left;padding:4px 6px;color:var(--ink)}
+  td{padding:7px 7px;font-size:11.6px;line-height:1.38;vertical-align:top;border-bottom:1px solid var(--rule)}
+  tbody tr:last-child td{border-bottom:1px solid var(--ink)}
+  td.id{font-family:"JetBrains Mono";font-size:10.8px;white-space:nowrap;color:var(--walnut);width:1%}
+  td.h{font-weight:600;white-space:nowrap;width:1%}
+  tbody tr:nth-child(even) td{background:var(--step)}
+
+  footer{border-top:1px solid var(--ink);display:grid;grid-template-columns:330px 1fr 150px 150px 150px 120px}
+  footer>div{padding:7px 12px;border-left:1px solid var(--ink);display:flex;flex-direction:column;justify-content:center}
+  footer>div:first-child{border-left:0}
+  footer .l{font-family:"IBM Plex Sans";font-size:8.5px;letter-spacing:.1em;color:var(--muted);font-weight:600}
+  footer .v{font-size:12px;margin-top:2px}
+  footer .t{font-family:"Space Grotesk";font-weight:600;font-size:14px;letter-spacing:-.01em}
+  footer .id{font-family:"Space Grotesk";font-weight:600;font-size:28px;letter-spacing:-.02em;line-height:1}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <div>
+      <h1>INTERIOR WALL ELEVATIONS, CUSTOM MILLWORK SECTIONS &amp; LAYERED LIGHTING</h1>
+      <div class="sub">East / West / North / South interior elevations · S-01 and S-02 millwork sections · imperial + metric dimensions · 96" (243.8 cm) ceiling assumed</div>
+    </div>
+    <div class="hdr-r">FOOTPRINT <span class="m">35,000 in² · 243.06 ft² · 22.58 m²</span><br>SCALE NTS · DIMENSIONS GOVERN</div>
+  </header>
+
+  <section class="top">
+    <div class="dwg"><img src="assets/crop_4_elevations.png" alt="Four interior elevations and two millwork sections"></div>
+    <aside class="keys">
+      <div>
+        <h4>E · EAST <span class="m">200" / 508 cm</span></h4>
+        <p>134" double vanity in five bays: <span class="k">S-01A</span> 18" tower · 36" south basin · <span class="k">S-01B</span> 26" powered grooming tower (internal 120 V GFCI, pocket flippers, pull-out stool) · 36" north basin · <span class="k">S-01C</span> 18" tower. 60" WC room inner face.</p>
+      </div>
+      <div>
+        <h4>W · WEST, UNFOLDED <span class="m">200" / 508 cm</span></h4>
+        <p><span class="k">M-01</span> 16" tankless chase · 84" walk-in shower with 44" recessed stone niche, 18" heated travertine bench, <span class="k">S-03</span> heated towel cabinet (Option A) · <span class="k">S-02B</span> 16" robe column · 32" WIC portal · <span class="k">S-02A</span> 48" linen, dual hamper &amp; utility locker.</p>
+      </div>
+      <div>
+        <h4>N · NORTH <span class="m">150" / 381 cm</span></h4>
+        <p>100" wet alcove: 68" freestanding stone tub, 8" full-width travertine ledge, overhead 70"×50" skylight well. 50" WC: wall-hung concealed cistern + <span class="k">S-04</span> recessed storage.</p>
+      </div>
+      <div>
+        <h4>S · SOUTH <span class="m">150" / 381 cm</span></h4>
+        <p>60" centred double French entry; <span class="k">S-01A</span> and <span class="k">S-02A</span> walnut millwork returns at 45" each side.</p>
+      </div>
+      <div>
+        <h4>SECTIONS <span class="m">14" D · 24" D</span></h4>
+        <p><span class="k">S-01</span> grooming tower 14" deep, GFCI at counter zone. <span class="k">S-02</span> linen / hamper vault 24" deep, ventilated hamper, 6" service plinth.</p>
+      </div>
+      <p class="hold">Field verification items prior to shop drawings: WC door hardware selection, S-04 recess depth relative to north window sill, and partition framing build-up.</p>
+    </aside>
+  </section>
+
+  <section class="tables">
+    <div>
+      <h3>01 · CUSTOM MILLWORK &amp; HARDWARE SPECIFICATION <span>S-01 – S-04</span></h3>
+      <table>
+        <thead><tr><th>ITEM</th><th>SPECIFICATION</th></tr></thead>
+        <tbody>
+          <tr><td class="h">Carcass</td><td>Marine-grade birch plywood; quarter-sawn American black walnut veneer; solid fluted walnut stiles</td></tr>
+          <tr><td class="h">Countertop</td><td><span class="m">2"</span> mitered honed Roman travertine slab with integral drip groove; undermount basins</td></tr>
+          <tr><td class="h">Electrical</td><td><span class="m">2×</span> recessed <span class="m">20 A</span> GFCI quad circuits, inside S-01B and S-02A</td></tr>
+          <tr><td class="h">Hardware</td><td>Blum Legrabox soft-close full-extension runners; concealed pocket flipper doors; knurled bronze pulls</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h3>02 · FOUR-LAYER ARCHITECTURAL LIGHTING SCHEDULE <span>CCT · CRI</span></h3>
+      <table>
+        <thead><tr><th>TAG</th><th>LAYER</th><th>SOURCE / INTENT</th></tr></thead>
+        <tbody>
+          <tr><td class="id">L-01</td><td class="h">Daylight</td><td>Existing <span class="m">70" × 50"</span> overhead skylight well; frosted architectural window shutters</td></tr>
+          <tr><td class="id">L-02</td><td class="h">Ambient cove</td><td><span class="m">2700 K</span> CRI <span class="m">97+</span> concealed linear LED, perimeter drop-ceiling and skylight-well grazing</td></tr>
+          <tr><td class="id">L-03</td><td class="h">Task · vanity</td><td><span class="m">3000 K</span> CRI <span class="m">97+</span> vertical edge-lit vanity mirrors for shadow-free facial light</td></tr>
+          <tr><td class="id">L-04</td><td class="h">Accent · night</td><td><span class="m">2400 K</span> IP67 recessed niche grazing; <span class="m">1%</span> dimmable motion-activated toe-kick path to WC</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h3>03 · WATERPROOFING, ACOUSTICS &amp; VENTILATION <span>WET ZONE</span></h3>
+      <table>
+        <thead><tr><th>ITEM</th><th>SPECIFICATION</th></tr></thead>
+        <tbody>
+          <tr><td class="h">Membrane</td><td>Schluter Kerdi, continuous across <span class="m">100" × 52"</span> tub alcove and <span class="m">50" × 84"</span> shower</td></tr>
+          <tr><td class="h">Threshold</td><td>Zero-threshold shower entry; <span class="m">2% (¼"/ft)</span> floor fall to linear drain</td></tr>
+          <tr><td class="h">Exhaust</td><td>Dual-speed inline fan, <span class="m">&lt; 0.5</span> sone, grilles in shower and WC ceiling soffits</td></tr>
+          <tr><td class="h">Verify</td><td>Slab recess, drain and duct routes, fan sizing on site survey</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <div><span class="l">PROJECT</span><span class="t">LUXURY MASTER BATHROOM · 243 FT²</span></div>
+    <div><span class="l">DRAWING TITLE</span><span class="v">Interior elevations · millwork sections · lighting &amp; wet-zone schedule</span></div>
+    <div><span class="l">SCALE</span><span class="v m">NTS · in / cm</span></div>
+    <div><span class="l">DATE · REV</span><span class="v m">2026-11-10 · 01</span></div>
+    <div><span class="l">SOURCE</span><span class="v m">DXF R2010</span></div>
+    <div><span class="l">SHEET</span><span class="id">ID-03</span></div>
+  </footer>
+</div>
+</body>
+</html>

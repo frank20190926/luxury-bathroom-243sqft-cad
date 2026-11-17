@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>ID-01 Plan, Axonometric & Storage</title>
+<link rel="stylesheet" href="board.css">
+<style>
+.main { display: grid; grid-template-columns: 58fr 42fr; min-height: 0; }
+.col { padding: 16px 22px 14px; min-height: 0; display: flex; flex-direction: column; }
+.col + .col { border-left: 1px solid var(--ink); }
+.plan { flex: 1; min-height: 0; display: flex; justify-content: center; align-items: flex-start; }
+.plan img { height: 100%; max-width: 100%; object-fit: contain; }
+.legend { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 18px; row-gap: 6px; border-top: 1px solid var(--rule); padding-top: 9px; margin-top: 6px; }
+.legend div { display: grid; grid-template-columns: 44px 1fr; font-size: 10.5px; line-height: 1.35; }
+.legend b { font-family: "JetBrains Mono", monospace; font-weight: 400; font-size: 10px; }
+.legend .num { font-size: 10px; }
+.axo { height: 452px; display: flex; justify-content: center; margin-bottom: 10px; }
+.axo img { height: 100%; }
+table { width: 100%; border-collapse: collapse; }
+th { font-family: "Space Grotesk", sans-serif; font-weight: 600; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink2); text-align: left; padding: 5px 6px; background: var(--tint); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+th.n, td.n { text-align: right; }
+td { padding: 5px 6px 6px; vertical-align: top; border-bottom: 1px solid var(--rule); font-size: 10.5px; line-height: 1.32; }
+td.tag { font-family: "JetBrains Mono", monospace; font-size: 10px; white-space: nowrap; }
+td.n { font-size: 11px; white-space: nowrap; }
+td .u { font-weight: 600; }
+td .c { color: var(--ink2); display: block; margin-top: 1px; }
+tr.tot td { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); background: var(--tint); font-weight: 600; }
+tr.tot td.n { font-weight: 400; font-size: 12px; }
+</style></head>
+<body><div class="sheet">
+
+<div class="head">
+  <span class="id disp">ID-01</span>
+  <span class="title disp">DIMENSIONED FLOOR PLAN, CAD CUTAWAY AXONOMETRIC &amp; STORAGE SYSTEM</span>
+  <span class="sub">Option A &middot; inches + centimetres</span>
+</div>
+
+<div class="metrics">
+  <div><div class="k">Footprint (supplied coordinates)</div><div class="v">243.06 sq ft</div><div class="s"><span class="mono">22.58 m²</span> &middot; <span class="mono">150"×200"</span> + <span class="mono">50"×100"</span> wing</div></div>
+  <div><div class="k">Clear width, cabinet fronts</div><div class="v">102"</div><div class="s"><span class="mono">259 cm</span> &middot; door sweeps excluded</div></div>
+  <div><div class="k">Concealed storage (Opt A)</div><div class="v">136.78 ft³</div><div class="s"><span class="mono">3,873 L</span> &middot; S-01 to S-04 internal envelopes</div></div>
+  <div><div class="k">Walk-in shower</div><div class="v">50" × 84"</div><div class="s"><span class="mono">127 × 213 cm</span> &middot; zero threshold, <span class="mono">18"</span> bench</div></div>
+  <div><div class="k">Double vanity wall</div><div class="v">134" (11'-2")</div><div class="s"><span class="mono">340 cm</span> &middot; 5 bays, 2 full-height towers</div></div>
+  <div><div class="k">Plumbing stack moves</div><div class="v">0"</div><div class="s">WC and vanity drain walls retained</div></div>
+</div>
+
+<div class="main">
+  <div class="col">
+    <div class="lbl"><span class="tag">01</span><span class="t">Option A — Proposed dimensioned floor plan</span><span class="r">Imperial inches + metric centimetres &middot; north up</span></div>
+    <div class="plan"><img src="assets/crop_plan_a.png" alt="Option A dimensioned floor plan"></div>
+    <div class="legend">
+      <div><b>M-01</b><span><span class="num">50"×16"</span> tankless utility chase; heater sizing and venting by plumber</span></div>
+      <div><b>SH</b><span><span class="num">50"×84"</span> walk-in rain &amp; steam shower, <span class="num">30"</span> pivot door</span></div>
+      <div><b>TUB</b><span><span class="num">68"×32"</span> zero-step freestanding stone tub in the <span class="num">70"×50"</span> skylight zone</span></div>
+      <div><b>WC</b><span><span class="num">50"×60"</span> private WC, <span class="num">28"</span> door opening</span></div>
+      <div><b>S-01</b><span><span class="num">134"</span> five-bay double vanity on the <span class="num">140"</span> east wall</span></div>
+      <div><b>S-02</b><span>West linen, hamper &amp; cleaning wall, <span class="num">24"</span> deep</span></div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="lbl"><span class="tag">02</span><span class="t">CAD-extruded cutaway axonometric</span><span class="r">Same coordinates as plan 01 &middot; SW light 35°</span></div>
+    <div class="axo"><img src="assets/crop_cutaway_iso.png" alt="CAD cutaway axonometric"></div>
+
+    <div class="lbl"><span class="tag">03</span><span class="t">Storage schedule — a place for every item</span><span class="r mono">136.78 ft³ / 3,873 L</span></div>
+    <table>
+      <thead><tr><th>Tag</th><th>Unit, outer W×D×H &middot; contents</th><th class="n">ft³</th><th class="n">L</th></tr></thead>
+      <tbody>
+        <tr><td class="tag">S-01A/C</td><td><span class="u">2× tall vanity towers <span class="mono">18"×24"×96"</span></span><span class="c">Bath towels, skincare, medicine, toiletry backstock</span></td><td class="n">35.85</td><td class="n">1,015.2</td></tr>
+        <tr><td class="tag">S-01B</td><td><span class="u">Grooming tower <span class="mono">26"×14"×60"</span></span><span class="c">Hairdryer, shavers, toothbrushes on internal 120 V GFCI outlets</span></td><td class="n">9.33</td><td class="n">264.3</td></tr>
+        <tr><td class="tag">S-01 DR</td><td><span class="u">4× U-notched drawers <span class="mono">36"×24"</span> bays</span><span class="c">Cosmetics, brushes, hair tools, velvet-lined jewellery trays</span></td><td class="n">10.83</td><td class="n">306.8</td></tr>
+        <tr><td class="tag">S-02A</td><td><span class="u">Linen, hamper &amp; utility vault <span class="mono">48"×24"×96"</span></span><span class="c">Folded bath sheets, 2 ventilated hampers, full-height vacuum / mop locker</span></td><td class="n">47.87</td><td class="n">1,355.5</td></tr>
+        <tr><td class="tag">S-02B</td><td><span class="u">Robe &amp; spa column <span class="mono">16"×20"×96"</span></span><span class="c">Hanging robes, slippers, steamer — beside the WIC portal</span></td><td class="n">12.83</td><td class="n">363.4</td></tr>
+        <tr><td class="tag">S-03</td><td><span class="u">Heated towel cabinet <span class="mono">22"×16"×84"</span></span><span class="c">Warm towels within reach of shower and tub (Option A only)</span></td><td class="n">12.31</td><td class="n">348.7</td></tr>
+        <tr><td class="tag">S-04</td><td><span class="u">WC cabinet <span class="mono">46"×10"×42"</span> + <span class="mono">44"</span> shower niche</span><span class="c">Spare rolls, hygiene stock; niche holds shower bottles (not counted)</span></td><td class="n">7.74</td><td class="n">219.2</td></tr>
+        <tr class="tot"><td class="tag">TOTAL</td><td>Option A &middot; Option B omits S-03: <span class="mono">124.46 ft³</span></td><td class="n">136.78</td><td class="n">3,873.1</td></tr>
+      </tbody>
+    </table>
+    <p class="note" style="margin-top:6px">Internal envelopes before shelves, runners and equipment; computed from the plan coordinates. Total uses unrounded values.</p>
+  </div>
+</div>
+
+<div class="tb" style="grid-template-columns: 1.55fr 1.7fr 0.8fr 0.8fr 0.55fr 0.7fr;">
+  <div><span class="k">Project</span><span class="v">MASTER BATHROOM RENOVATION (243 SQ FT)</span></div>
+  <div><span class="k">Drawing</span><span class="v">PLAN, 3D AXONOMETRIC &amp; STORAGE SCHEDULE</span></div>
+  <div><span class="k">Scale</span><span class="v">AS SHOWN — BAR</span></div>
+  <div><span class="k">Date</span><span class="v mono">2026-11-10</span></div>
+  <div><span class="k">Rev</span><span class="v mono">A</span></div>
+  <div><span class="k">Sheet</span><span class="v sheetno disp">ID-01</span></div>
+</div>
+
+</div></body></html>

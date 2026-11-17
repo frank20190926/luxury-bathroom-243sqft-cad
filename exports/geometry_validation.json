@@ -1,0 +1,106 @@
+{
+  "checks": [
+    {
+      "name": "Footprint valid and exactly 35000 square inches",
+      "pass_": true
+    },
+    {
+      "name": "Footprint is nonoverlapping main rectangle + west wing",
+      "pass_": true
+    },
+    {
+      "name": "SHOWER-A exact bounds",
+      "pass_": true
+    },
+    {
+      "name": "SHOWER-B exact bounds",
+      "pass_": true
+    },
+    {
+      "name": "M-01 exact bounds",
+      "pass_": true
+    },
+    {
+      "name": "M-EXIST exact bounds",
+      "pass_": true
+    },
+    {
+      "name": "TUB exact bounds",
+      "pass_": true
+    },
+    {
+      "name": "Five vanity bays sum to 134 inches",
+      "pass_": true
+    },
+    {
+      "name": "Cabinet-front gap is 102 inches",
+      "pass_": true
+    },
+    {
+      "name": "Requested circulation conflict is disclosed: 208 in2",
+      "pass_": true
+    },
+    {
+      "name": "South-hinged shower leaf sweep misses tub",
+      "pass_": true
+    },
+    {
+      "name": "S-05 not invented",
+      "pass_": true
+    },
+    {
+      "name": "Storage A includes S-03; B omits it",
+      "pass_": true
+    },
+    {
+      "name": "DXF R2010 inches",
+      "pass_": true
+    },
+    {
+      "name": "DXF reopened audit has zero errors and fixes",
+      "pass_": true
+    },
+    {
+      "name": "Native dimensions present",
+      "pass_": true
+    },
+    {
+      "name": "existing exact footprint in CAD",
+      "pass_": true
+    },
+    {
+      "name": "A exact footprint in CAD",
+      "pass_": true
+    },
+    {
+      "name": "B exact footprint in CAD",
+      "pass_": true
+    },
+    {
+      "name": "DWG placed-vector roundtrip passes",
+      "pass_": true
+    },
+    {
+      "name": "cad_plan_option_a.png exact pixel size",
+      "pass_": true
+    },
+    {
+      "name": "cad_plan_existing_vs_option_b.png exact pixel size",
+      "pass_": true
+    },
+    {
+      "name": "cad_3d_cutaway_iso.png exact pixel size",
+      "pass_": true
+    },
+    {
+      "name": "cad_4_elevations.png exact pixel size",
+      "pass_": true
+    }
+  ],
+  "passed": 24,
+  "pending_images": [],
+  "design_issues": 12,
+  "design_status": "Coordination holds, not construction-ready",
+  "dwg_status": "local_roundtrip_geometry_pass",
+  "dwg_semantic_dimensions": false
+}

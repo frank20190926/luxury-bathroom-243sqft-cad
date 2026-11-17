@@ -1,0 +1,34 @@
+{
+  "dxf_version": "AC1024",
+  "units": 1,
+  "audit_errors": 0,
+  "audit_fixes": 0,
+  "entities": {
+    "LWPOLYLINE": 156,
+    "LINE": 257,
+    "TEXT": 178,
+    "HATCH": 66,
+    "ELLIPSE": 39,
+    "ARC": 9,
+    "DIMENSION": 79
+  },
+  "layers": [
+    "0",
+    "Defpoints",
+    "A-WALL-EXIST",
+    "A-WALL-NEW",
+    "A-DOOR",
+    "A-GLAZ",
+    "A-FIXT-PLMB",
+    "A-MILLWORK-STOR",
+    "A-FLOR-PATT",
+    "A-CLNG-SKYLIGHT",
+    "A-DIMS-IMP",
+    "A-DIMS-MET",
+    "A-ANNO-TEXT",
+    "A-ELEV-LINE",
+    "A-COORD-HOLD"
+  ],
+  "modelspace_plans": "1:1 in inches; placement offsets in JSON; no geometry scaling",
+  "native_dimension_count": 79
+}

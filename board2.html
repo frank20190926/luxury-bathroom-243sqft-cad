@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>ID-02 Coordinated 3D Views & Design Explanation</title>
+<link rel="stylesheet" href="board.css">
+<style>
+.sheet { grid-template-rows: auto 1fr 58px; }
+.main { display: grid; grid-template-columns: 66fr 34fr; min-height: 0; }
+.col { padding: 16px 22px 14px; min-height: 0; display: flex; flex-direction: column; }
+.col + .col { border-left: 1px solid var(--ink); }
+figure { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+figure + figure { margin-top: 14px; }
+figure img { flex: 1; min-height: 0; width: 100%; object-fit: cover; display: block; }
+figcaption { display: grid; grid-template-columns: 150px 1fr; column-gap: 14px; padding-top: 7px; border-top: 1px solid var(--ink); margin-top: 0; font-size: 10.8px; line-height: 1.4; }
+figcaption b { font-family: "Space Grotesk", sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.02em; }
+figcaption b span { display: block; font-family: "IBM Plex Sans", sans-serif; font-weight: 400; color: var(--ink2); font-size: 10px; letter-spacing: 0.03em; }
+.key { position: relative; height: 470px; display: flex; justify-content: center; }
+.key .wrap { position: relative; height: 100%; aspect-ratio: 2000 / 1820; }
+.key img, .key svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.key img { opacity: 0.62; }
+.narr { flex: 1; display: flex; flex-direction: column; gap: 11px; margin-top: 8px; }
+.narr h3 { font-family: "Space Grotesk", sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.02em; text-transform: uppercase; display: grid; grid-template-columns: 26px 1fr; }
+.narr h3 .mono { font-weight: 400; }
+.narr p { padding-left: 26px; font-size: 11px; line-height: 1.42; }
+</style></head>
+<body><div class="sheet">
+
+<div class="head">
+  <span class="id disp">ID-02</span>
+  <span class="title disp">COORDINATED 3D ARCHITECTURAL VIEWS &amp; DESIGN EXPLANATION</span>
+  <span class="sub">Option A &middot; views keyed to plan ID-01</span>
+</div>
+
+
+<div class="main">
+  <div class="col">
+    <figure>
+      <img src="assets/view1_north_sanctuary.jpg" style="object-position: 50% 30%;" alt="View 01 looking north">
+      <figcaption><b>VIEW 01<span>CAM A — LOOKING NORTH</span></b>
+        <span>Zero-step honed Roman travertine wet zone beneath the existing <span class="num">70"×50"</span> skylight: <span class="num">68"×32"</span> matte stone soaking tub and full-width <span class="num">8"</span>-deep rear stone ledge; at left the <span class="num">50"×84"</span> bronze-framed glass steam shower with <span class="num">18"</span>-deep heated stone bench; at right the <span class="num">134"</span> fluted walnut double vanity.</span></figcaption>
+    </figure>
+    <figure>
+      <img src="assets/view2_east_vanity_storage.jpg" style="object-position: 50% 50%;" alt="View 02 looking east">
+      <figcaption><b>VIEW 02<span>CAM B — LOOKING EAST / NORTH-EAST</span></b>
+        <span>Fluted American black walnut and honed travertine five-bay double vanity (S-01: S-01C north tower, north basin, open S-01B powered grooming tower with internal 120 V outlets holding hairdryer and toothbrushes off the counter, south basin, S-01A south tower), with the flush walnut WC portal and north soaking tub alcove at left.</span></figcaption>
+    </figure>
+  </div>
+
+  <div class="col">
+    <div class="lbl"><span class="tag">03</span><span class="t">Camera key plan</span><span class="r">Sightlines on plan ID-01</span></div>
+    <div class="key"><div class="wrap">
+      <img src="assets/crop_plan_a.png" alt="">
+      <svg viewBox="0 0 2000 1820" xmlns="http://www.w3.org/2000/svg">
+        <g fill="rgba(20,20,19,0.07)" stroke="#141413" stroke-width="4" stroke-dasharray="18 10">
+          <polygon points="1130,1419 352,292 1584,292"/>
+          <polygon points="903,966 1616,655 1616,1562"/>
+        </g>
+        <g fill="#141413">
+          <rect x="1112" y="1401" width="36" height="36"/>
+          <rect x="885" y="948" width="36" height="36"/>
+          <path d="M890,984 L780,1160" stroke="#141413" stroke-width="3" fill="none"/>
+        </g>
+        <g font-family="Space Grotesk" font-weight="600" font-size="46" fill="#141413">
+          <text x="1170" y="1455">CAM A</text>
+          <text x="1170" y="1500" font-family="IBM Plex Sans" font-weight="400" font-size="36">VIEW 01 · NORTH</text>
+          <text x="760" y="1200" text-anchor="end">CAM B</text>
+          <text x="760" y="1245" text-anchor="end" font-family="IBM Plex Sans" font-weight="400" font-size="36">VIEW 02 · EAST</text>
+        </g>
+      </svg>
+    </div></div>
+
+    <div class="lbl" style="margin-top:8px"><span class="tag">04</span><span class="t">Design explanation</span><span class="r">Brief section 8.C</span></div>
+    <div class="narr">
+      <div><h3><span class="mono">01</span>Core idea — travertine &amp; walnut</h3>
+        <p>Replaces the diagonal corner platform and fragmented cabinetry with three materials used throughout: honed Roman travertine slabs, quarter-sawn fluted American black walnut and brushed champagne bronze.</p></div>
+      <div><h3><span class="mono">02</span>Daily use &amp; circulation</h3>
+        <p>Removes the 2-step tub platform for a level, radiant-heated wet zone under the existing skylight. The <span class="num">50"×60"</span> shower becomes a <span class="num">50"×84"</span> enclosure with an <span class="num">18"</span> heated bench, and <span class="num">102" (8'-6")</span> stays clear between the vanity and west cabinet fronts.</p></div>
+      <div><h3><span class="mono">03</span><span>Storage — <span class="num" style="font-weight:400">136.78 ft³</span> concealed</span></h3>
+        <p>Hairdryer, toothbrushes and shavers stay plugged into 120 V GFCI outlets inside the S-01B tower. Hampers, bath sheets and full-height vacuum and mop storage sit behind the <span class="num">24"</span>-deep S-02 west wall. Volumes are internal envelopes before shelves and hardware.</p></div>
+      <div><h3><span class="mono">04</span>Plumbing, mechanical &amp; windows</h3>
+        <p>WC (pan centre <span class="num">X=125", Y=176"</span>) and east vanity drain wall stay in place: <span class="num">0"</span> relocation. Option A converts to a tankless heater in a <span class="num">50"×16"</span> chase to lengthen the shower to <span class="num">84"</span>; fuel, venting and sizing to be confirmed by the plumber. Option B keeps the <span class="num">50"×40"</span> utility closet footprint unchanged. Skylight and north / west windows are retained with privacy glazing or shutters.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="tb" style="grid-template-columns: 1.55fr 1.7fr 0.8fr 0.8fr 0.55fr 0.7fr;">
+  <div><span class="k">Project</span><span class="v">MASTER BATHROOM RENOVATION (243 SQ FT)</span></div>
+  <div><span class="k">Drawing</span><span class="v">3D VIEWS, CAMERA KEY &amp; DESIGN EXPLANATION</span></div>
+  <div><span class="k">Scale</span><span class="v">NTS (VIEWS)</span></div>
+  <div><span class="k">Date</span><span class="v mono">2026-11-10</span></div>
+  <div><span class="k">Rev</span><span class="v mono">A</span></div>
+  <div><span class="k">Sheet</span><span class="v sheetno disp">ID-02</span></div>
+</div>
+
+</div></body></html>
